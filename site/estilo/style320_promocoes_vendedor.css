@@ -1,0 +1,380 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.centralizar-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+#menu {
+    background-color: #ffd43c;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px 0px 10px -5px #888888;
+}
+
+#menu ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+#espaco-menu-aberto {
+    float: right;
+    margin-top: 15px;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#espaco-menu-fechado {
+    float: right;
+    margin-top: 15px;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#caixa-menu-aberto {
+    background:    #00d218;
+    border-radius: 1000px;
+    padding:       10px;
+    width: 80%;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 20px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    border: 0;
+    margin-left: 22px;
+}
+
+#caixa-menu-fechado {
+    background:   red;
+    border-radius: 1000px;
+    padding:       10px;
+    width: 80%;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 20px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    border: 0;
+    margin-left: 22px;
+}
+
+.imagens_menu {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 2% auto;
+}
+
+main {
+    height: auto;
+    padding-bottom: 200px;
+}
+
+header {
+    background-color: #ffd43c;
+    width: 100%;
+    height: 70px;
+}
+
+#voltar {
+    width: 20px;
+    height: 26px;
+    float: right;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+
+#icone {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 35px;
+    z-index: 2;
+    margin-left: -1px;
+}
+
+#redor {
+    background-color: #2e294e;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+#redor2 {
+    background-color: #2e294e;
+    height: 50px;
+    margin-left: 70px;
+    margin-top: -60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+.espacos {
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+    background-color: rgb(221, 170, 255);
+    width: 90%;
+    margin-top: 30px;
+}
+
+.titulo-primario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #333333;
+}
+
+.titulo-secundario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: #333333;
+    margin-top: -50px;
+    padding-bottom: 35px;
+}
+
+.botao_adicionar {
+    background-color:#105cff;
+    text-align: center;
+	border-radius:28px;
+	border:0px solid;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+    text-decoration:none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.textbox {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-style: hidden;
+    border-bottom: 1px solid #fec700;
+    height: 25px;
+    width: 50%;
+}
+
+.textbox-dias {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-style: hidden;
+    border-bottom: 1px solid #fec700;
+    height: 25px;
+    width: 50px;
+}
+
+.textbox-meses {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-style: hidden;
+    border-bottom: 1px solid #fec700;
+    height: 25px;
+    width: 80px;
+}
+
+.textbox-ano {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-style: hidden;
+    border-bottom: 1px solid #fec700;
+    height: 25px;
+    width: 60px;
+}
+
+.textbox-produto {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-style: hidden;
+    border-bottom: 1px solid #fec700;
+    height: 25px;
+    width: 240px;
+}
+
+.spanzin {
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#preco {
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+#botao-add {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    background:    #00aeff;
+    border-radius: 1000px;
+    padding:       5px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 15px "Open Sans", sans-serif;
+    text-align:    center;
+    border: 0;
+    width: 100px;
+}
+
+#botao-cancelar{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    background:    #ff0000;
+    border-radius: 1000px;
+    padding:       5px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 15px "Open Sans", sans-serif;
+    text-align:    center;
+    border: 0;
+    width: 85px;
+}
+
+.icone-pedido {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.titulo-pedido {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: -30px;
+}
+
+.seta-baixo {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 20px;
+    margin-top: -35px;
+}
+
+.linha {
+    width: 95%;
+    border-width: 0; 
+	height: 1px;
+    border-top-width: 1px;
+    border-color: whitesmoke;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nome-produto {
+    margin-left: 20px;
+}
+
+.preco-antigo {
+    margin-left: 20px;
+}
+
+.preco-promo {
+    margin-left: 20px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+#criacao {
+    color: #00aeff;
+    font-weight: bold;
+}
+
+#expiracao {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+#promocoes-ativas { /*-----------------*/
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: none;
+}
+
+#promocoes-expiradas { /*-----------------*/
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: none;
+}
+
+#form-promocao { /*--------------------*/
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: white;
+    padding-top: 20px;
+    margin-top: -55px;
+    display: none;
+}

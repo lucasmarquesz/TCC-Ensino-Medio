@@ -1,0 +1,320 @@
+/* Registro */
+
+.voltar {  
+    width: 20px;
+    height: 26px;
+    position: absolute;
+    margin-left: 93%;
+}
+
+.h1 {
+    font-size: 20px;
+}
+
+.centralizar_carregar_foto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carregar_foto {
+    text-align: center;
+    width: 135px;
+    height: 135px;
+    border-radius: 100%;
+    border: 1px solid #fec700;
+    margin-top: 25px;
+}
+
+p {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foto_carregar {
+    width: 60px;
+    height: 60px;
+    padding-top: 15px;
+}
+
+.foto_perfil {
+    width: 100px;
+    height: 100px;
+    padding-top: 15px;
+}
+
+.foto_informacao {
+    width: 14px;
+    height: 14px;
+}
+
+.olho {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: -10%;
+}
+
+form {
+    margin-top: 25px;
+}
+
+label {
+    font-size: 16px;
+}
+
+#cpf {
+    display: none;
+}
+
+#cnpj {
+    display: none;
+}
+
+.textbox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: hidden;
+    border-bottom: 1px solid #fec700;
+    height: 25px;
+    width: 98%;
+}
+
+.botao {
+    background: #2e294e;
+    border: 1px solid #fec700;
+    border-radius: 10px;
+    padding: 20px 45px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 16px/1 "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    width: 80%;
+    text-decoration: none;
+}
+
+#botao {
+    text-align: center;
+}
+
+.radio {
+    margin-top: 10px;
+}
+
+#num_pags {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 30px;
+}
+
+.num_pag {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid #fec700;
+    margin-bottom: 10px;
+}
+
+#pag_selecionada {
+    background-color: #2e294e;
+    color: #fff;
+}
+
+.span_pags {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
+
+
+
+/* Fim Registro Cliente */
+
+/* Registro Cliente End */
+
+#div_img_endereco {
+    text-align: center;
+}
+
+#img_endereco {
+    width: 90%;
+    height: 225px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.text_cliente_end {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+.botao_end {
+    background: #2e294e;
+    border: 1px solid #fec700;
+    border-radius: 10px;
+    padding: 15px 35px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 16px/1 "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    width: 190px;
+}
+
+.botao1 {
+    background: #2e294e;
+    border: 1px solid #fec700;
+    border-radius: 10px;
+    padding: 15px 35px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 16px/1 "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    width: 120px;
+    text-decoration: none;
+}
+
+#depois {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+/* Fim Registro Cliente End */
+
+/* Fim Registro Cliente Pag */
+
+#div_img_pagamento {
+    text-align: center;
+}
+
+#img_pagamento {
+    width: 90%;
+    height: 270px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.img_inf {
+    width: 20px;
+    height: 20px;
+    padding-top: 5px;
+}
+
+.text_cliente_pag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.text_paypal {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+.link_paypal {
+    text-decoration: none;
+}
+
+.img_paypal {
+    width: 75px;
+    height: 75px;
+}
+
+.linha_paypal {
+    margin-top: 40px;
+}
+
+/* Fim Registro Cliente Pag */
+
+/* Resumo Cliente */
+
+.titulo_inf_cli{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.inf_cli {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -10px;
+}
+
+.titulo_resumo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 50px;
+}
+
+.texto_resumo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.img_paypal_resumo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: -15px;
+}
+
+.titulo_inf_cli_p{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin-top: -100px;
+    margin-left: 150px;
+    position: absolute;
+}
+
+.inf_cli_p {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -70px;
+    margin-left: 150px;
+    position: absolute;
+}
+
+.titulo_inf_cli_p_1{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin-top: -40px;
+    margin-left: 150px;
+    position: absolute;
+}
+
+.inf_cli_p_1 {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -10px;
+    margin-left: 150px;
+    position: absolute;
+}
+
+.checkbox_resumo {
+    margin-top: 70px;
+}
+
+.checkbox_resumo_b {
+    margin-bottom: 30px;
+}
+
+#pagamento {
+    display: none;
+}
+
+/* Fim Resumo Cliente */
+
+
+
+

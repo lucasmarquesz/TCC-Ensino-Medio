@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd o Ovo | Carrinho</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_carrinho_cliente.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <ul>
+            <a href="inicio_geral_cliente.html"><img class="imagens_menu" src="imagens/home_inativo.png"></a>
+            <a href="perfil_cliente.html"><img class="imagens_menu" src="imagens/perfil_inativo.png"></a>
+            <a href="carrinho_cliente.html"><img class="imagens_menu" src="imagens/cesta_ativo.png"></a>
+            <a href="pedidos_cliente.html"><img class="imagens_menu" src="imagens/pedido_inativo.png"></a>
+            <a href="favoritos_cliente.html"><img class="imagens_menu" src="imagens/favorito_inativo.png"></a>
+        </ul>
+    </div>
+
+    <main>
+        <div id="lista-pedidos">
+            <div class="centralizar-div-pedido">
+
+                <div class="caixa-pedido">
+                    <h2 class="nome-vendedor">Nome do Vendedor</h2>
+                    <p class="end-vendedor">Av. Joaquim, 700</p>
+                    <div class="pedidos">
+                        <span class="pedido">30 Ovos Brancos</span><span class="preco">9,50 R$</span><span class="quant">1x</span><br>
+                    </div>
+                    <div class="inf-pedido">
+                        <span class="total">Total</span><span class="frete">Frete</span><br>
+                        <span class="valor-total">R$ 15,00</span><span class="valor-frete">R$ 5,50</span><br>
+                    </div>
+                    <img class="remover-pedido" src="imagens/lixo.png">
+                </div>
+
+                <div class="caixa-pedido">
+                    <h2 class="nome-vendedor">Nome do Vendedor</h2>
+                    <p class="end-vendedor">Av. Joaquim, 700</p>
+                    <div class="pedidos">
+                        <span class="pedido">30 Ovos Brancos</span><span class="preco">9,50 R$</span><span class="quant">1x</span><br>
+                    </div>
+                    <div class="inf-pedido">
+                        <span class="total">Total</span><span class="frete">Frete</span><br>
+                        <span class="valor-total">R$ 15,00</span><span class="valor-frete">R$ 5,50</span><br>
+                    </div>
+                    <img class="remover-pedido" src="imagens/lixo.png">
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="inf-pagamento">
+            <button id = "dinheiro" class="botao-inf" onclick="CorAtiva('dinheiro'),CorInativa('paypal')">Dinheiro</button>
+            <button id = "paypal" class="botao-inf" onclick="CorAtiva('paypal'),CorInativa('dinheiro')">PayPal</button>
+            <h2 id="entrega">Entregar Em:</h2>
+            <button id = "casa" class="botao-inf" onclick="CorAtiva('casa'),CorInativa('trabalho')">Casa</button>
+            <button id = "trabalho" class="botao-inf" onclick="CorAtiva('trabalho'),CorInativa('casa')">Trabalho</button>
+            <a href="endereco_cliente.html"><div id="more">
+                <div class="centralizar-div">
+                    <img id="img-cruz" src="imagens/cruz.png">
+                </div>
+            </div></a>
+            <p id="frete">Frete: R$ 3,00</p>
+            <h2 id="entrega">Use um cupom:</h2>
+            <form>
+                <select id="cupom" name="cupons">
+                    <option value="">10% de Desconto</option>
+                    <option value="">15% de Desconto</option>
+                </select>
+            </form>
+            <p id="frete">Total: R$ 15,00</p>
+            
+            <div class="centralizar-div-pedido">
+                <button id="botao-comprar">Comprar</button>
+                <button id="botao-comprar-feito">Pedido Feito</button>
+            </div>
+        </div>
+
+        <script>
+            function CorInativa(el) {
+            var backgroundColor = document.getElementById(el).style.backgroundColor;
+                if(backgroundColor == "rgba(127, 249, 172, 1)")
+                    document.getElementById(el).style.backgroundColor = '#999999';
+                else
+                    document.getElementById(el).style.backgroundColor = '#999999';
+    }
+
+            function CorAtiva(el) {
+            var backgroundColor = document.getElementById(el).style.backgroundColor;
+                if(backgroundColor == "#999999")
+                    document.getElementById(el).style.backgroundColor = 'rgba(127, 249, 172, 1)';
+                else
+                    document.getElementById(el).style.backgroundColor = 'rgba(127, 249, 172, 1)';
+    }
+        </script>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd O Ovo: Compre e Venda seus Ovos</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_index.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <img id="imagem_logo" src="imagens/logo_trans.png">
+        <img id="imagem_home" src="imagens/imagem_home_480.jpg">
+
+        <div id="btns">
+            <button class="botao" onclick="Mostrar('entrar')">Entrar</button><br>
+            <button class="botao" onclick="Mostrar2('registrar')">Registrar-se</button>
+        </div>
+
+        <script> // Código para o Botão Entrar
+            function Mostrar(el) {
+            var display = document.getElementById(el).style.display;
+            if(display == "block")
+                document.getElementById(el).style.display = 'block';
+            else
+                document.getElementById(el).style.display = 'block';
+        }
+
+            function Mostrar2(el) {
+            var display = document.getElementById(el).style.display;
+            if(display == "block")
+                document.getElementById(el).style.display = 'block';
+            else
+                document.getElementById(el).style.display = 'block';
+        }
+
+            function Esconder(el) {
+            var display = document.getElementById(el).style.display;
+            if(display == "block")
+                document.getElementById(el).style.display = 'none';
+            else
+                document.getElementById(el).style.display = 'none';
+        }
+        </script>
+
+
+        <div class="centralizar-div">
+            <div id="mensagem_inicial">
+                <img class="voltar" src="imagens/voltar.png" onclick="Esconder('mensagem_inicial')">
+                <p id="texto_mensagem_inicial">
+                    Informe seu CEP e veja os vendedores mais próximos de você:
+                </p>
+                <input id="textbox" type="text" name="CEP"><br>
+                <button id="botao-mensagem">Localizar</button>
+            </div>
+        </div>
+
+        <div class="centralizar-div">
+            <div id="entrar"> 
+                <img class="voltar" src="imagens/voltar.png" onclick="Voltar('entrar')">
+
+                <script>
+                    function Voltar(el) {
+                    var display = document.getElementById(el).style.display;
+                    if(display == "none")
+                        document.getElementById(el).style.display = 'none';
+                    else
+                        document.getElementById(el).style.display = 'none';
+                }
+                </script>
+
+                <h1 class="titulo_divs">Entrar:</h1>
+
+                <form>
+                    <label class="label">Email/Celular:</label><br>
+                    <input class="textbox" type="text" name="email-celular"><br>
+
+                    <label class="label">Senha</label><br>
+                    <input class="textbox" type="password" name="senha"><br>
+
+                    <a id="esqueci_senha" href="">Esqueci minha senha</a><br>
+
+                    <input id="square" type="checkbox" name="opcao" value="lembrar-me"><label id="label_square">Lembrar de mim</label><br><br>
+
+                    <div class="centralizar-div">
+                        <button id="botao-mensagem">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="centralizar-div">
+            <div id="registrar">
+                <img class="voltar" src="imagens/voltar.png" onclick="Voltar2('registrar')"><br>
+
+                <script>
+                    function Voltar2(el) {
+                    var display = document.getElementById(el).style.display;
+                    if(display == "none")
+                        document.getElementById(el).style.display = 'none';
+                    else
+                        document.getElementById(el).style.display = 'none';
+                }
+                </script>
+
+                <h1 class="titulo_divs">Você Deseja:</h1>
+
+                <a href="vendedor_registro.html"><img class="imagens_div" src="imagens/vender.jpg"></a>
+                <a href="cliente_registro.html"><img class="imagens_div" src="imagens/comprar.jpg"></a>
+                </div>
+            </div>
+        </div>
+
+    <div id="casa">
+        <div class="centralizar-div">
+            <div id="div_icone_casa">
+                <img id="icone_casa" src="imagens/icone_casa.png">
+            </div>
+        </div>
+
+        <div class="centralizar-div">
+            <h1 class="titulo">Tempo é dinheiro, economize já!</h1><br>
+        </div>
+
+        <div class="centralizar-div">
+            <p class="texto">
+                Faça pedidos diretamente da sua casa de forma rápida e fácil, sem interromper sua rotina.
+            </p>
+        </div>
+    </div>
+
+    <div id="porcentagem">
+        <div class="centralizar-div">
+            <div id="div_icone_porcentagem">
+                <img id="icone_porcentagem" src="imagens/icone_porcentagem.png">
+            </div>
+        </div>
+
+        <div class="centralizar-div">
+            <h1 class="titulo">Seu negócio, sua administração</h1><br>
+        </div>
+
+        <div class="centralizar-div">
+            <p class="texto">
+                Tenha dados e informações de rápido acesso sobre seu negócio, escolha a melhor abordagem, e veja seu negócio crescer.
+            </p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

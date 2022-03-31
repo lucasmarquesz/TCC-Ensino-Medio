@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_registro.css"/>
+    <title>Kd O Ovo: Registro de Cliente</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <a href="cliente_endereco.html"><img class="voltar" src="imagens/voltar.png"></a>
+
+        <h1 class="h1">Pagamento:</h1>
+
+        <div id="div_img_pagamento">
+            <img id="img_pagamento" src="imagens/pagar.jpg">
+        </div>
+
+        <p class="text_cliente_end">Deseja adicionar um método de pagamento agora ou depois?</p>
+
+        <p class="text_cliente_pag"><img class="img_inf" src="imagens/informacao.png">É possível utilizar apenas dinheiro</p>
+
+        <div id="botao">
+            <input class="botao_end" type="submit" value="Agora" onclick="Mostrar('pagamento')">
+        </div>
+
+        <script>
+            function Mostrar(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "block")
+                    document.getElementById(el).style.display = 'block';
+                else
+                document.getElementById(el).style.display = 'block';
+    }
+        </script>
+
+        <div id="botao">
+            <a href="cliente_resumo.html" class="botao1">Depois</a>
+        </div>
+
+        <div id = "pagamento">
+        <hr class="linha_paypal">
+        <a href=""><img class="img_paypal" src="imagens/logo-paypal.png"></a>
+        <a class="link_paypal" href=""><p class="text_paypal">Pague com PayPal</p></a>
+        <hr class="linha_paypal">
+        </div>
+
+        <div id="num_pags">
+            <div class="num_pag"><span class="span_pags">1</span></div>
+            <div class="num_pag"><span class="span_pags">2</span></div>
+            <div id="pag_selecionada" class="num_pag"><span class="span_pags">3</span></div>
+        </div>
+
+        <div id="botao">
+            <a class="botao" href="cliente_resumo.html">Próximo</a>
+        </div>
+
+        <div id="depois">
+            <a href="cliente_resumo.html">Depois</a>
+        </div>
+    </div>
+</body>
+</html>

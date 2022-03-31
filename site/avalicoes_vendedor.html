@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd o Ovo | Avaliações</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_avaliacoes_vendedor.css">
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <div id="espaco-menu-aberto">
+            <button id="caixa-menu-aberto" onclick="Troca('espaco-menu-fechado'),Esconder('espaco-menu-aberto')">Aberto</button>
+        </div>
+
+        <script>                   
+            function Esconder(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "block")
+                    document.getElementById(el).style.display = 'none';
+                else
+                    document.getElementById(el).style.display = 'none';
+    }
+
+            function Troca(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "none")
+                    document.getElementById(el).style.display = 'block';
+                else
+                    document.getElementById(el).style.display = 'block';
+    }
+
+        </script>
+
+        <div id="espaco-menu-fechado">
+            <button id="caixa-menu-fechado" onclick="Troca('espaco-menu-aberto'),Esconder('espaco-menu-fechado')">Fechado</button>
+        </div>
+        <ul>
+            <a href=""><img class="imagens_menu" src="imagens/home_inativo.png"></a>
+            <a href="perfil_vendedor.html"><img class="imagens_menu" src="imagens/perfil_ativo.png"></a>
+        </ul>
+    </div> 
+    
+    <header>
+        <div id="redor">
+            <div class="centralizar-div">
+                <img id="icone" src="imagens/avaliacoes_vendedor.png">
+            </div>
+        </div>
+
+        <div id="redor2">
+            <h1 id="titulo">Avaliações</h1>
+        </div>
+
+        <a href="perfil_vendedor.html"><img id="voltar" src="imagens/voltar.png"></a>
+    </header>
+
+    <main>
+
+        <div class="centralizar-div">
+            <div id="avaliacao-principal">
+                <h1 id="nota-principal">4,0</h1>
+                <div class="centralizar-div">
+                    <img id="img-nota-principal" src="imagens/nota-estrela.png">
+                </div>
+                <p id="qnt-avaliacao">1 avaliação</p>
+            </div>
+        </div>
+        
+        <div class="centralizar-div-filas">
+            <div id="filas-avaliacao">
+                <div class="fila">
+                    <img class="nota-secun1" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela.png">
+                    <span class="numero-avaliacao">0</span>
+                </div>
+
+                <div class="fila">
+                    <img class="nota-secun1" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela-sem.png">
+                    <span class="numero-avaliacao">1</span>
+                </div>
+
+                <div class="fila">
+                    <img class="nota-secun1" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela-sem.png">
+                    <img class="nota-secun" src="imagens/nota-estrela-sem.png">
+                    <span class="numero-avaliacao">0</span>
+                </div>
+
+                <div class="fila">
+                    <img class="nota-secun1" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela-sem.png">
+                    <img class="nota-secun" src="imagens/nota-estrela-sem.png">
+                    <img class="nota-secun" src="imagens/nota-estrela-sem.png">
+                    <span class="numero-avaliacao">0</span>
+                </div>
+
+                <div class="fila">
+                    <img class="nota-secun1" src="imagens/nota-estrela.png">
+                    <img class="nota-secun" src="imagens/nota-estrela-sem.png">
+                    <img class="nota-secun" src="imagens/nota-estrela-sem.png">
+                    <img class="nota-secun" src="imagens/nota-estrela-sem.png">
+                    <img class="nota-secun" src="imagens/nota-estrela-sem.png">
+                    <span class="numero-avaliacao">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="centralizar-div">
+            <div class="comentarios">
+                <h2 class="nome-cliente">Vanessa</h2>
+                <div class="conjunto-nota">
+                    <img class="nota-comentario" src="imagens/nota-estrela.png">
+                    <img class="nota-comentario" src="imagens/nota-estrela.png">
+                    <img class="nota-comentario" src="imagens/nota-estrela.png">
+                    <img class="nota-comentario" src="imagens/nota-estrela.png">
+                    <img class="nota-comentario" src="imagens/nota-estrela-sem.png">
+                </div>
+                <p class="data-comentario">01/02/2020</p>
+                <div class="inf-pedido">
+                    <span class="quant">1x</span><span class="pedido">Caixa 30 ovos brancos</span><span class="preco">9,50 R$</span><br>
+                    <span class="quant">1x</span><span class="pedido">Caixa 15 ovos brancos</span><span class="preco">4,50 R$</span><br>
+                    <p class="valor-pedido">17,50 R$</p>
+                </div>
+                <div class="comentario">
+                    <p>A entrega foi rápida, porém cerca de 5 ovos de codorna vieram quebrados.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

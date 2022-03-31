@@ -1,0 +1,149 @@
+/*  CSS Registro Vendedor Endereço Estabelecimento  */
+
+#voltar {  
+    width: 20px;
+    height: 26px;
+    position: absolute;
+    margin-left: 93%;
+}
+
+.h1 {
+    font-size: 20px;
+}
+
+#imagem_central {
+    width: auto;
+    height: auto;
+    max-width: 70%;
+    max-height: 50%;
+    border-radius: 10px;
+}
+
+.centralizar-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+p {
+    font-size: 20px;
+    font-family: Candara, sans-serif;
+}
+
+.caixa {
+    text-align: center;
+}
+
+#botoes {
+    margin-left: 27%;
+}
+
+#botao_enviar {
+    background: #2e294e;
+    border: 1px solid #fec700;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 16px/1 "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    width: 65%;
+    display: block;
+}
+
+#botao_enviar:hover {
+    background-color:#ffb000;
+    border-radius: 10px;
+}
+
+/* Ele só esta ficando amarelo quando clico, não sei como fazer ficar pra sempre :( */
+
+form {
+    margin-top: 25px;
+}
+
+label {
+    font-size: 14px;
+}
+
+.textbox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: hidden;
+    border-bottom: 1px solid #fec700;
+    height: 25px;
+    width: 98%;
+}
+
+.carregar_foto {
+    text-align: center;
+    width: 135px;
+    height: 135px;
+    border-radius: 100%;
+    border: 1px solid #fec700;
+    margin-top: 25px;
+}
+
+.foto_carregar {
+    width: 60px;
+    height: 60px;
+    padding-top: 15px;
+}
+
+.carregar{
+    font-size: 12px;
+}
+
+
+
+.botao {
+    background: #2e294e;
+    border: 1px solid #fec700;
+    border-radius: 10px;
+    padding: 20px 45px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 16px/1 "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    width: 80%;
+    text-decoration: none;
+}
+
+
+#botao {
+    text-align: center;
+}
+
+.radio {
+    margin-top: 10px;
+}
+
+#num_pags {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 30px;
+}
+
+.num_pag {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 100%;
+    border: 1px solid #fec700;
+    margin-bottom: 10px;
+}
+
+#pag_selecionada {
+    background-color: #2e294e;
+    color: #fff;
+}
+
+.span_pags {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}

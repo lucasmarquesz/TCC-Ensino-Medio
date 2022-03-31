@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_adms.css"/>
+    <title>Administrador</title>
+
+</head>
+
+<body>
+    <header class="topo_menu">
+        <img id="imagem_perfil" src="imagens/perfil.png">
+        <h1 id="nome_perfil">Nome de Perfil</h1> <!-- Nome do perfil -->
+        <p id="cargo">Adm Master</p>
+        <a href="adm_master.html"><img id="imagem_home" src="imagens/home.png"></a>
+        <img id="imagem_deslogar" src="imagens/deslogar.png">
+    </header>
+
+    <div class="div_botao_enviar">
+        <input class="botao_enviar" type="submit" value="+ Enviar Comunicado" onclick="Mostrar2('div_formulario')">
+    </div>
+
+    <script>
+        function Mostrar2(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "block")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'block';
+    }
+
+        function Voltar(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "block")
+            document.getElementById(el).style.display = 'none';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+    </script>
+
+    <center>
+    <div id="div_formulario">
+        <img class="voltar" src="imagens/voltar.png" onclick="Voltar('div_formulario')">
+        <form class="form_adm"> 
+            <h1 class="titulo_form">Enviar Comunicado</h1>
+            <label>Título do comunicado</label><br>
+            <input class="textbox" type="text" name="titulo"><br>
+
+            <label>Corpo do comunicado:</label><br>
+            <input class="text_comunicado" type="text" name="corpo_comunicado"><br>
+
+            <label>Enviar para:</label><br>
+            <select class="textbox" name="enviar_para">
+                <option value="opcao1">Todos os clientes</option>
+                <option value="opcao2">Todos os vendedores</option>
+                <option value="opcao3">Todos os clientes e vendedores</option>
+                <option value="opcao4">Novos clientes</option>
+                <option value="opcao5">Novos vendedores</option>
+                <option value="opcao6">Clientes com mais de 6 meses de uso</option>
+                <option value="opcao7">Clientes com mais de 12 meses de uso</option>
+                <option value="opcao8">Vendedores com mais de 6 meses de uso</option>
+                <option value="opcao9">Vendedores com mais de 12 meses de uso</option>
+            </select><br>
+            <div class="div_botao_enviar_form">
+                <input class="botao_enviar_form" type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    </center>
+
+    <img id="seta_baixo" src="imagens/seta_baixo.png" onclick="Mostrar('comunicado')">
+    <script>
+        function Mostrar(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "block")
+            document.getElementById(el).style.display = 'none';
+        else
+            document.getElementById(el).style.display = 'block';
+    }
+    </script>
+    <h2 id="comunicado_enviado">Comunicados enviados</h2>
+    <hr>
+    <center>
+    <div id="comunicado">
+        <h1 id="titulo_comunicado">Assunto</h1>
+        <p id="texto_comunicado">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+        </p>
+        <p id="inf_comunicado">
+            Enviado por: <!-- Nome de quem enviou --><br>
+            Enviado em: <!-- Data de envio --><br>
+            Para: <!-- Para quem foi enviado -->
+        </p>
+    </div>
+    </center>
+</body>

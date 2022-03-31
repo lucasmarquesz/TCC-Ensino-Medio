@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd o Ovo | Loja</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_loja_vendedor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div id="imagem-loja">
+            <div id="centralizar-div-voltar">
+                <a href="inicio_geral_cliente.html"><img id="voltar" src="imagens/voltar.png"></a>
+            </div>
+        </div>
+        <h1 id="nome-loja">Nome da Loja</h1>
+        <img id="avaliacao-loja" src="imagens/nota-estrela.png"><p id="nota-loja">5.0</p>
+        <p id="end-loja">Endereço</p>
+        <span id="status-loja">Aberto</span><span id="horario-loja">10h - 19h</span>
+    </header>
+
+    <main>
+        <div id = "botao">
+            <button type = "button" id= "botao_enviar" class="grupo1 btn-toggle btn waves-effect waves-light green" data-element="#grupo1" onclick="CorAtiva('botao_enviar'),CorInativa('botao_enviar2')">Catálogo</button>
+            <button type = "button" id= "botao_enviar2" class="btn-toggle btn waves-effect waves-light green" data-element="#grupo2" onclick="CorAtiva('botao_enviar2'),CorInativa('botao_enviar')">Assinaturas</button>
+        </div>
+
+        <div class = "grupos row">
+        <div class="col s12 m6 l3 grupo" id="grupo1">
+        <div id="catalogo">
+            <div class="centralizar-div-coluna">
+                <div class="caixa-item">
+                    <img class="foto-item" src="imagens/ovos-padrao.png">
+                    <h2 class="titulo-item">Caixa c/ 30 Ovos <br>Brancos</h2>
+                    <p class="preco-item">R$ 9,90</p>
+                    <div class="caixa-carrinho">
+                        <img class="img-cesta" src="imagens/cesta.png">
+                        <div class="bola-amarela" onclick="less()">
+                            <div class="centralizar-div">
+                                <img class="sinal" src="imagens/menos.png">
+                            </div>
+                        </div>
+                        <input type="number" name="numero" id="num" min="0">
+                        <div class="bola-amarela1" onclick="more()">
+                            <div class="centralizar-div">
+                                <img class="sinal1" src="imagens/cruz.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>  
+
+        <div class="grupos row">
+        <div class="col s12 m6 l3 grupo" id="grupo2" style = "display: none">
+        <div id="assinatura">
+            <div class="centralizar-div-coluna">
+                <div class="caixa-item">
+                    <img class="foto-item" src="imagens/ovos-padrao2.png">
+                    <h2 class="titulo-item">Caixa c/ 30 Ovos <br>Brancos Mensal</h2>
+                    <p class="preco-item">R$ 8,50</p>
+                    <div id = "formulario" >
+                        <form>
+                            <label class="escolha">Escolha o dia do pagamento e entrega:</label><br>
+                            <input class="textbox" name="Dia" type="number" min="1" max="31"><br>
+
+                            <label class="escolha">Escolha o Endereço de Entrega:</label><br>
+                            <select class="textbox" name="Endereço">
+                                <option value="">Selecione</option>
+                                <option value="Casa">Casa</option>
+                                <option value="Trabalho">Trabalho</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="caixa-carrinho" onclick="Mais('formulario')">
+                        <div class="centralizar-div">
+                            <h2 class="assinar">Assinar</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+    </main>
+
+    <script> // Clicar em Vendedor e Usuário
+        $(function(){
+            $(".btn-toggle").click(function(e){
+                e.preventDefault();
+                $(".grupo").hide(); //Oculta todos elemento com classe grupo
+                
+                el = $(this).data('element');
+                $(el).toggle(); //Exibe o elemento clicado.
+            });
+          });
+
+        function Mais(el) {
+        var display = document.getElementById(el).style.display;
+            if(display == "none")
+                document.getElementById(el).style.display = 'block';
+            else
+                document.getElementById(el).style.display = 'block';
+        }
+
+          function CorAtiva(el) {
+        var backgroundColor = document.getElementById(el).style.backgroundColor;
+            if(backgroundColor == "white")
+                document.getElementById(el).style.backgroundColor = '#ffd43c';
+            else
+                document.getElementById(el).style.backgroundColor = '#ffd43c';
+        }
+
+        function CorInativa(el) {
+        var backgroundColor = document.getElementById(el).style.backgroundColor;
+            if(backgroundColor == "#ffd43c")
+                document.getElementById(el).style.backgroundColor = 'white';
+            else
+                document.getElementById(el).style.backgroundColor = 'white';
+        }
+
+        var numero;
+        numero = 0;
+
+        function less() {
+        numero--;
+        setValue(numero);
+        }
+
+        function more() {
+        numero++;
+        setValue(numero);
+        }
+
+        function setValue(value) {
+        document.getElementById('num').value = value;
+        }
+
+        setValue(numero);
+        </script>
+
+</body>
+</html>

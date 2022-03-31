@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd o Ovo | Sua Página</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_suapagina_vendedor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <div id="espaco-menu-aberto">
+            <button id="caixa-menu-aberto" onclick="Troca('espaco-menu-fechado'),Esconder('espaco-menu-aberto')">Aberto</button>
+        </div>
+
+        <script>                   
+            function Esconder(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "block")
+                    document.getElementById(el).style.display = 'none';
+                else
+                    document.getElementById(el).style.display = 'none';
+    }
+
+            function Troca(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "none")
+                    document.getElementById(el).style.display = 'block';
+                else
+                    document.getElementById(el).style.display = 'block';
+    }
+
+        </script>
+
+        <div id="espaco-menu-fechado">
+            <button id="caixa-menu-fechado" onclick="Troca('espaco-menu-aberto'),Esconder('espaco-menu-fechado')">Fechado</button>
+        </div>
+        <ul>
+            <a href=""><img class="imagens_menu" src="imagens/home_inativo.png"></a>
+            <a href="perfil_vendedor.html"><img class="imagens_menu" src="imagens/perfil_ativo.png"></a>
+        </ul>
+    </div> 
+
+    <header>
+        <div id="imagem-loja">
+            <div id="centralizar-div-voltar">
+                <a href="perfil_vendedor.html"><img id="voltar" src="imagens/voltar.png"></a>
+            </div>
+        </div>
+        <h1 id="nome-loja">Nome da Loja</h1>
+        <img id="avaliacao-loja" src="imagens/nota-estrela.png"><p id="nota-loja">5.0</p>
+        <p id="end-loja">Endereço</p>
+        <span id="status-loja">Aberto</span><span id="horario-loja">10h - 19h</span>
+    </header>
+
+    <main>
+        <div id = "botao">
+            <button type = "button" id= "botao_enviar" class="grupo1 btn-toggle btn waves-effect waves-light green" data-element="#grupo1" onclick="CorAtiva('botao_enviar'),CorInativa('botao_enviar2')">Catálogo</button>
+            <button type = "button" id= "botao_enviar2" class="btn-toggle btn waves-effect waves-light green" data-element="#grupo2" onclick="CorAtiva('botao_enviar2'),CorInativa('botao_enviar')">Assinaturas</button>
+        </div>
+
+        <div class = "grupos row">
+        <div class="col s12 m6 l3 grupo" id="grupo1">
+        <div class="centralizar-div-catalogo">
+
+            <div class="opcoes-loja">
+                <img class="foto-ovo" src="imagens/ovos-padrao2.png">
+                <h2 class="titulo-item">Caixa c/ 30 Ovos <br>Brancos</h2>
+                <p class="preco-item">R$ 9,90</p>
+            </div>
+
+            <div class="opcoes-loja">
+                <img class="foto-ovo" src="imagens/ovos-padrao.png">
+                <h2 class="titulo-item">Caixa c/ 30 Ovos <br>Brancos</h2>
+                <p class="preco-item">R$ 9,90</p>
+            </div>
+
+            <div class="opcoes-loja">
+                <img class="foto-ovo" src="imagens/ovos-padrao2.png">
+                <h2 class="titulo-item">Caixa c/ 30 Ovos <br>Caipiras</h2>
+                <p class="preco-item">R$ 10,90</p>
+            </div>
+
+            <div class="opcoes-loja">
+                <img class="foto-ovo" src="imagens/ovos-padrao.png">
+                <h2 class="titulo-item">Caixa c/ 30 Ovos <br>Caipiras</h2>
+                <p class="preco-item">R$ 10,90</p>
+            </div>
+
+            <div class="opcoes-loja">
+                <img class="foto-ovo" src="imagens/ovos-padrao2.png">
+                <h2 class="titulo-item">Caixa c/ 30 Ovos <br>Codornas</h2>
+                <p class="preco-item">R$ 4,90</p>
+            </div>
+
+            <div class="opcoes-loja">
+                <img class="foto-ovo" src="imagens/ovos-padrao.png">
+                <h2 class="titulo-item">Caixa c/ 30 Ovos <br>Cordonas</h2>
+                <p class="preco-item">R$ 4,90</p>
+            </div>
+            
+        </div>
+        </div>
+        </div>
+
+        <div class="grupos row">
+        <div class="col s12 m6 l3 grupo" id="grupo2" style = "display:none" >
+        <div class="centralizar-div-assinatura">
+
+            <div class="opcoes-loja">
+                <img class="foto-ovo" src="imagens/ovos-padrao2.png">
+                <h2 class="titulo-item">Caixa c/ 30 Ovos <br>Brancos Mensal</h2>
+                <p class="preco-item">R$ 9,90</p>
+            </div>
+
+            <div class="opcoes-loja">
+                <img class="foto-ovo" src="imagens/ovos-padrao.png">
+                <h2 class="titulo-item">Caixa c/ 30 Ovos <br>Caipiras Mensal</h2>
+                <p class="preco-item">R$ 9,90</p>
+            </div>
+            
+        </div>
+        </div>
+        </div>
+
+        <script> // Clicar em Vendedor e Usuário
+            $(function(){
+                $(".btn-toggle").click(function(e){
+                    e.preventDefault();
+                    $(".grupo").hide(); //Oculta todos elemento com classe grupo
+                    
+                    el = $(this).data('element');
+                    $(el).toggle(); //Exibe o elemento clicado.
+                });
+              });
+
+            
+              function CorAtiva(el) {
+            var backgroundColor = document.getElementById(el).style.backgroundColor;
+                if(backgroundColor == "white")
+                    document.getElementById(el).style.backgroundColor = '#ffd43c';
+                else
+                    document.getElementById(el).style.backgroundColor = '#ffd43c';
+    }
+
+            function CorInativa(el) {
+            var backgroundColor = document.getElementById(el).style.backgroundColor;
+                if(backgroundColor == "#ffd43c")
+                    document.getElementById(el).style.backgroundColor = 'white';
+                else
+                    document.getElementById(el).style.backgroundColor = 'white';
+    }
+        </script>
+    </main>
+
+</body>
+</html>

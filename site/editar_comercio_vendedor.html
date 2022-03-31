@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd o Ovo | Editar Comércio</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_editar_comercio_vendedor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <div id="espaco-menu-aberto" onclick="Troca('espaco-menu-fechado'),Esconder('espaco-menu-aberto')">
+            <button id="caixa-menu-aberto">Aberto</button>
+        </div>
+
+        <script>                   
+            function Esconder(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "block")
+                    document.getElementById(el).style.display = 'none';
+                else
+                    document.getElementById(el).style.display = 'none';
+    }
+
+            function Troca(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "none")
+                    document.getElementById(el).style.display = 'block';
+                else
+                    document.getElementById(el).style.display = 'block';
+    }
+
+        </script>
+
+        <div id="espaco-menu-fechado" onclick="Troca('espaco-menu-aberto'),Esconder('espaco-menu-fechado')">
+            <button id="caixa-menu-fechado">Fechado</button>
+        </div>
+        <ul>
+            <a href=""><img class="imagens_menu" src="imagens/home_inativo.png"></a>
+            <a href="perfil_vendedor.html"><img class="imagens_menu" src="imagens/perfil_ativo.png"></a>
+        </ul>
+    </div> 
+
+    <header>
+        <div id="redor">
+            <div class="centralizar-div">
+                <img id="icone" src="imagens/editar_comercio.png">
+            </div>
+        </div>
+
+        <div id="redor2">
+            <h1 id="titulo">Editar Comércio</h1>
+        </div>
+
+        <a href="perfil_vendedor.html"><img id="voltar" src="imagens/voltar.png"></a>
+    </header>
+
+    <main>
+
+        <div class="centralizar-div">
+            <div id="imagem-loja"></div>
+        </div>
+        
+        <div id="informacoes">
+            <h2 class="texto-cima">Nome do Comércio</h2>
+            <p class="texto-baixo">Esquina do Ovo</p>
+
+            <h2 class="texto-cima">Telefone Comercial</h2>
+            <p class="texto-baixo">(55) 11 9999-9999</p>
+
+            <h2 class="texto-cima">Endereço</h2>
+            <p class="texto-baixo">Rua Joaquim Pereira, 102</p>
+
+            <h2 class="texto-cima">Horário de Funcionamento</h2>
+            <p class="texto-baixo">Seg - Ter - Qua - Qui - Sex</p>
+
+            <h2 class="texto-cima">Expediente</h2>
+            <p class="expediente">Início: <b>10h</b></p>
+            <p class="expediente">Fim: <b>20h</b></p>
+        </div>
+
+        <div class="centralizar-div">
+            <button id="estilo-botao" onclick="Mais('caixa-editar')">Editar</button>
+        </div>
+        <div class="centralizar-div">
+            <div id="caixa-editar">
+                <img id="voltar-caixa" src="imagens/voltar.png" onclick="Voltar('caixa-editar')">
+                <form>
+                    <label>Nome do Comércio:</label><br>
+                    <input class="textbox" type="text"><br>
+                    <label>Telefone Comercial:</label><br>
+                    <input class="textbox" type="text"><br>
+                    <label>Endereço:</label><br>
+                    <input class="textbox" type="text">
+                    <label>Dias e Horários Funcional:</label><br>
+                    <div id="caixa-opcoes">
+                    <input class="opcoes" type="checkbox"><span class="texto-opcao">Domingo</span><br>
+                    <input class="opcoes" type="checkbox"><span class="texto-opcao">Segunda-Feira</span><br>
+                    <input class="opcoes" type="checkbox"><span class="texto-opcao">Terça-Feira</span><br>
+                    <input class="opcoes" type="checkbox"><span class="texto-opcao">Quarta-Feira</span><br>
+                    <input class="opcoes" type="checkbox"><span class="texto-opcao">Quinta-Feira</span><br>
+                    <input class="opcoes" type="checkbox"><span class="texto-opcao">Sexta-Feira</span><br>
+                    <input class="opcoes" type="checkbox"><span class="texto-opcao">Sábado</span><br>
+                    </div>
+                    <label>Início do Expediente:</label>
+                    <input class="textbox-exp" type=text>h<br>
+                    <label>Fim do Expediente:</label>
+                    <input class="textbox-exp" type=text>h<br>
+                    <div class="centralizar-div">
+                        <button id="botao-editar">Editar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function Mais(el) {
+        var display = document.getElementById(el).style.display;
+            if(display == "none")
+                document.getElementById(el).style.display = 'block';
+            else
+                document.getElementById(el).style.display = 'block';
+            }
+
+        function Voltar(el) {
+        var display = document.getElementById(el).style.display;
+            if(display == "block")
+                document.getElementById(el).style.display = 'none';
+            else
+                document.getElementById(el).style.display = 'none';
+            }
+    </script>
+
+</body>
+</html>

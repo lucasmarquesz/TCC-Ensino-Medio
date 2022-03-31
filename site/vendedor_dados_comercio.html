@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_vendedor_dados.css"/>
+    <title>Kd O Ovo: Registro de Vendedor</title>
+
+</head>
+
+<body>
+    <div>
+        <div>
+            <a href = "vendedor_endereco_estabelecimento.html"><img src="imagens/voltar.png" id = "voltar"></a>
+        </div>
+
+        <h1 class="h1">Detalhe seu comércio:</h1>
+
+        <form>
+            <label>Nome</label><br>
+            <input class = "textbox" type="text" name="nome_usu"><br>
+
+            <label>Telefone</label><br>
+            <input name="tel_usu" class="textbox" type="tel" id="celular" onkeyup="formataTelefone(this,event);" maxlength="15" required><br>
+
+           
+
+            <label>Dias e horários de funcionamento:</label><br>
+            <input class = "radio" type="checkbox" value = "Domingo" name="domingo">Domingo<br>
+            <input class = "radio" type="checkbox" value = "Segunda-Feira" name="segunda">Segunda-Feira<br>
+            <input class = "radio" type="checkbox" value = "Terça-Feira" name="terca">Terça-Feira<br>
+            <input class = "radio" type="checkbox" value = "Quarta-Feira" name="quarta">Quarta-Feira<br>
+            <input class = "radio" type="checkbox" value = "Quinta-Feira" name="quinta">Quinta-Feira<br>
+            <input class = "radio" type="checkbox" value = "Sexta-Feira" name="sexta">Sexta-Feira<br>
+            <input class = "radio" type="checkbox" value = "Sábado" name="sabado">Sábado<br><br>
+
+            <label>Início de expediente:</label>
+            <input class = "textbox_expediente" type="text">h<br>
+
+            <label>Fim de expediente:</label>
+            <input class = "textbox_expediente" type="text">h<br>
+
+            <div id="num_pags">
+                <div  class="num_pag"><span class="span_pags">1</span></div>
+                <div  class="num_pag"><span class="span_pags">2</span></div>
+                <div class="num_pag"><span class="span_pags">3</span></div>
+                <div id="pag_selecionada" class="num_pag"><span class="span_pags">4</span></div>
+                <div class="num_pag"><span class="span_pags">5</span></div>
+            </div>
+
+            <div id="botao">
+                <input class="botao" type="submit" value="Próximo">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

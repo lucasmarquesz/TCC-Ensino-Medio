@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.centralizar-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+#menu {
+    background-color: #ffd43c;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px 0px 10px -5px #888888;
+}
+
+#menu ul {
+    text-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px
+}
+
+.imagens_menu {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 2% auto;
+}
+
+header {
+    background-color: #ffd43c;
+    width: 100%;
+    height: 70px;
+}
+
+#voltar {
+    width: 20px;
+    height: 26px;
+    position: absolute;
+    margin-left: 90%;
+    margin-top: -50px;
+}
+
+#icone {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 35px;
+    z-index: 2;
+}
+
+#redor {
+    background-color: #2e294e;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+#redor2 {
+    background-color: #2e294e;
+    height: 50px;
+    margin-left: 70px;
+    margin-top: -60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+#texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.assinatura {
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.foto {
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 90px;
+    margin-top: -60px;
+}
+
+.palavra {
+    font-weight: normal
+}
+
+.seta-baixo {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+#caixa_escondida {
+    display: none;
+}
+
+#endereco {
+    font-style: italic;
+    margin-top: 40px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Paragrafo {
+    color: #00b921;
+    font-family: "Candara Bold", "Candara Regular", Candara, sans-serif;
+    margin-left: 5px;
+    margin-top: -10px;
+}
+
+#botao_excluir_sempre {
+    background-color: red;
+    text-align: center;
+    border-radius: 10px;
+    color:white;
+    font-family: Arial;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 60px;
+    border: 0px;
+}
+
+main {
+    height: 900px;
+}

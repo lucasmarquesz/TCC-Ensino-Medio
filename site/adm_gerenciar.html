@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_adms.css"/>
+    <title>Administrador</title>
+
+</head>
+
+<body>
+    <header class="topo_menu">
+        <img id="imagem_perfil" src="imagens/perfil.png">
+        <h1 id="nome_perfil">Nome de Perfil</h1> <!-- Nome do perfil -->
+        <p id="cargo">Adm Master</p>
+        <a href="adm_master.html"><img id="imagem_home" src="imagens/home.png"></a>
+        <img id="imagem_deslogar" src="imagens/deslogar.png">
+    </header>
+
+    <div class="divBusca">
+        <input type="text" class="txtBusca" placeholder="Buscar...">
+        <img class="bntBusca" src="imagens/busca.png" alt="Buscar">
+    </div>
+
+    <div class="div_botao_enviar">
+        <input class="botao_enviar" type="submit" value="+ Adicionar Administrador" onclick="Mostrar('div_formulario2')">
+    </div>
+
+    <script>
+    function Mostrar(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "block")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'block';
+    }
+
+    function Voltar(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "block")
+            document.getElementById(el).style.display = 'none';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+    </script>
+
+    <center>
+    <div id="div_formulario2">
+        <img class="voltar" src="imagens/voltar.png" onclick="Voltar('div_formulario2')">
+        <form class="form_adm"> 
+            <h1 class="titulo_form">Adicionar Administrador</h1>
+            <label>Nome:</label><br>
+            <input class="textbox" type="text" name="nome_adm"><br>
+
+            <label>Email:</label><br>
+            <input class="textbox" type="email" name="email_adm"><br>
+
+            <label>Senha:</label><br>
+            <input class="textbox" type="text" name="senha_adm"><br>
+
+            <label>Nível:</label><br>
+            <select class="textbox" name="nivel_adm">
+                <option value="opcao1">Administrador nível 1</option>
+                <option value="opcao2">Administrador nível 2</option>
+                <option value="opcao3">Administrador nível Master</option>
+            </select><br>
+
+            <div class="div_botao_enviar_form">
+                <input class="botao_enviar_form" type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    </center>
+
+    <div class="selecao_adm">
+        <img class="img_adm" src="imagens/perfil.png" alt="Perfil">
+        <h1 class="nome_adm">Nome do Administrador</h1>
+        <p class="desc_adm">
+            Email: adskdhjsakl@gmail.com<br>
+            Senha: 90213821903
+        </p>
+        <h1 class="nome_adm">Nível do Administrador</h1>
+    </div>
+
+    <div class="selecao_adm">
+        <img class="img_adm" src="imagens/perfil.png" alt="Perfil">
+        <h1 class="nome_adm">Nome do Administrador</h1>
+        <p class="desc_adm">
+            Email: adskdhjsakl@gmail.com<br>
+            Senha: 90213821903
+        </p>
+        <h1 class="nome_adm">Nível do Administrador</h1><br>
+        <div class="div_poder_adm">
+            <input class="poder_adm" type="submit" value="Rebaixar Adm">
+            <input class="poder_adm_p" type="submit" value="Promover Adm">
+            <input class="poder_adm_e" type="submit" value="Excluir Adm">
+        </div>
+    </div>
+</body>

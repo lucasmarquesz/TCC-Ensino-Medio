@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd o Ovo | Pedidos e Assinaturas</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_pedido_assinatura_vendedor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <div id="espaco-menu-aberto">
+            <button id="caixa-menu-aberto" onclick="Troca('espaco-menu-fechado'),Esconder('espaco-menu-aberto')">Aberto</button>
+        </div>
+
+        <script>                   
+            function Esconder(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "block")
+                    document.getElementById(el).style.display = 'none';
+                else
+                    document.getElementById(el).style.display = 'none';
+    }
+
+            function Troca(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "none")
+                    document.getElementById(el).style.display = 'block';
+                else
+                    document.getElementById(el).style.display = 'block';
+    }
+
+        </script>
+
+        <div id="espaco-menu-fechado">
+            <button id="caixa-menu-fechado" onclick="Troca('espaco-menu-aberto'),Esconder('espaco-menu-fechado')">Fechado</button>
+        </div>
+        <ul>
+            <a href=""><img class="imagens_menu" src="imagens/home_inativo.png"></a>
+            <a href="perfil_vendedor.html"><img class="imagens_menu" src="imagens/perfil_ativo.png"></a>
+        </ul>
+    </div> 
+
+    <header>
+        <div id="redor">
+            <div class="centralizar-div">
+                <img id="icone" src="imagens/pedidos_assinaturas.png">
+            </div>
+        </div>
+
+        <div id="redor2">
+            <h1 id="titulo">Pedidos e <br>Assinaturas</h1>
+        </div>
+
+        <a href="perfil_vendedor.html"><img id="voltar" src="imagens/voltar.png"></a>
+    </header>
+
+    <main>
+
+        <div id = "botao">
+            <button type = "button" id= "botao_enviar" class="grupo1 btn-toggle btn waves-effect waves-light green" data-element="#grupo1" onclick="CorAtiva('botao_enviar'),CorInativa('botao_enviar2')">Pedidos</button>
+            <button type = "button" id= "botao_enviar2" class="btn-toggle btn waves-effect waves-light green" data-element="#grupo2" onclick="CorAtiva('botao_enviar2'),CorInativa('botao_enviar')">Assinaturas</button>
+        </div>
+
+        <div class = "grupos row">
+        <div class="col s12 m6 l3 grupo" id="grupo1">
+        <div class="caixa-pedido">
+            <img id="chat" src="imagens/chat.png">
+            <h2 id="nome-cliente">Nome do Cliente</h2>
+            <p id="end-cliente">Endereço</p>
+            
+            <div id="inf-pedido">
+                <span class="produto">Produto</span><span class="preco">9,50 R$</span><span class="unidade">1x</span><br>
+                <span class="produto">Produto</span><span class="preco">4,50 R$</span><span class="unidade">5x</span><br>
+            </div>
+            <div id="caixa-botoes">
+                <button id="aceitar">Aceitar</button>
+                <button id="rejeitar">Rejeitar</button>
+                <p id="total-pedido">Total</p>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="grupos row">
+        <div class="col s12 m6 l3 grupo" id="grupo2" style = "display:none" >
+        <div class="caixa-assinatura">
+            <img id="chat" src="imagens/chat.png">
+            <h2 id="nome-cliente">Nome do Cliente</h2>
+            <p id="end-cliente">Endereço</p>
+            <p id="ciclo">Ciclo</p>
+            
+            <div id="inf-assinatura">
+                <span class="produto">Assinatura</span><span class="preco">14,50 R$</span><span class="unidade">1x</span><br>
+            </div>
+            <div id="caixa-botoes-assinatura">
+                <button id="aceitar">Aceitar</button>
+                <button id="rejeitar">Rejeitar</button>
+                <p id="total-pedido">Total</p>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <script>
+            $(function(){
+            $(".btn-toggle").click(function(e){
+                e.preventDefault();
+                $(".grupo").hide(); //Oculta todos elemento com classe grupo
+                    
+                el = $(this).data('element');
+                $(el).toggle(); //Exibe o elemento clicado.
+            });
+            });
+
+            function CorAtiva(el) {
+            var backgroundColor = document.getElementById(el).style.backgroundColor;
+                if(backgroundColor == "white")
+                    document.getElementById(el).style.backgroundColor = '#ffd43c';
+                else
+                    document.getElementById(el).style.backgroundColor = '#ffd43c';
+        }
+
+            function CorInativa(el) {
+            var backgroundColor = document.getElementById(el).style.backgroundColor;
+                if(backgroundColor == "#ffd43c")
+                    document.getElementById(el).style.backgroundColor = 'white';
+                else
+                    document.getElementById(el).style.backgroundColor = 'white';
+        }
+        </script>
+    </main>
+
+</body>
+</html>

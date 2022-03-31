@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd o Ovo | Histórico</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_historico_cliente.css">
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <ul>
+            <a href=""><img class="imagens_menu" src="imagens/home_inativo.png"></a>
+            <a href="perfil_cliente.html"><img class="imagens_menu" src="imagens/perfil_ativo.png"></a>
+            <a href=""><img class="imagens_menu" src="imagens/cesta_inativo.png"></a>
+            <a href=""><img class="imagens_menu" src="imagens/pedido_inativo.png"></a>
+            <a href=""><img class="imagens_menu" src="imagens/favorito_inativo.png"></a>
+        </ul>
+    </div>
+
+    <header>
+        <div id="redor">
+            <div class="centralizar-div">
+                <img id="icone" src="imagens/historico_pedido.png">
+            </div>
+        </div>
+
+        <div id="redor2">
+            <h1 id="titulo">Histórico</h1>
+        </div>
+
+        <a href="perfil_cliente.html"><img id="voltar" src="imagens/voltar.png"></a>
+    </header>
+
+    <main>
+
+        <img class="icone-pedido" src="imagens/pedido_concluido.png">
+        <h2 class="titulo-pedido">Concluídos</h2>
+        <img class="seta-baixo" src="imagens/seta_baixo.png" onclick="aumentar('caixa-pedir')">
+        <hr class="linha">
+
+        <script>
+            function aumentar(el) {
+            var display = document.getElementById(el).style.display;
+            if(display == "block")
+                document.getElementById(el).style.display = 'none';
+            else
+                document.getElementById(el).style.display = 'block';
+        }
+        </script> 
+
+        <div id="caixa-pedir">
+            <h2 class="nome-loja">Nome da Loja</h2>
+
+            <span class="quant">1x</span><span class="pedido">Caixa 30 ovos brancos</span><span class="preco">9,50 R$</span><br>
+            <span class="quant">1x</span><span class="pedido">Caixa 15 ovos brancos</span><span class="preco">4,50 R$</span><br>
+            <p class="valor-pedido">17,50 R$</p>
+            <p class="frete-pedido">Frete: 3,50 R$</p>
+            <p class="conclusao-pedido">Concluído em 02/04/2020</p>
+        </div>
+
+        <img class="icone-pedido" src="imagens/pedido_cancelado.png">
+        <h2 class="titulo-pedido">Cancelados</h2>
+        <img class="seta-baixo" src="imagens/seta_baixo.png"  onclick="aumentar2('caixa-pedido2')">
+        <hr class="linha">
+
+        <div id="caixa-pedido2" onclick="aumentar2('caixa-pedido2')">
+            <h2 class = "nome-loja"> Nome da Loja </h2>
+
+            <span class="quant">1x</span><span class="pedido">Caixa 30 ovos brancos</span><span class="preco">9,50 R$</span><br>
+            <p class="valor-pedido">13,00 R$</p>
+            <p class="frete-pedido">Frete: 3,50 R$</p>
+            <p class="cancelado-pedido">Cancelado em 02/04/2020</p>
+        </div>
+
+        <script>
+            function aumentar2(el) {
+            var display = document.getElementById(el).style.display;
+            if(display == "none")
+                document.getElementById(el).style.display = 'block';
+            else
+                document.getElementById(el).style.display = 'none';
+        }
+        </script> 
+
+    </main>
+
+</body>
+</html>

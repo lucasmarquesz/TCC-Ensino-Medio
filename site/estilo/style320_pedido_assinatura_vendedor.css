@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.centralizar-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+#menu {
+    background-color: #ffd43c;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px 0px 10px -5px #888888;
+}
+
+#menu ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+#espaco-menu-aberto {
+    float: right;
+    margin-top: 15px;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#espaco-menu-fechado {
+    float: right;
+    margin-top: 15px;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#caixa-menu-aberto {
+    background:    #00d218;
+    border-radius: 1000px;
+    padding:       10px;
+    width: 80%;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 20px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    border: 0;
+    margin-left: 22px;
+}
+
+#caixa-menu-fechado {
+    background:   red;
+    border-radius: 1000px;
+    padding:       10px;
+    width: 80%;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 20px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    border: 0;
+    margin-left: 22px;
+}
+
+.imagens_menu {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 2% auto;
+}
+
+header {
+    background-color: #ffd43c;
+    width: 100%;
+    height: 70px;
+}
+
+#voltar {
+    width: 20px;
+    height: 26px;
+    float: right;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+
+#icone {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    margin-top: 35px;
+    z-index: 2;
+    margin-left: -1px;
+}
+
+#redor {
+    background-color: #2e294e;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+#redor2 {
+    background-color: #2e294e;
+    height: 50px;
+    margin-left: 70px;
+    margin-top: -60px;
+    padding-left: 30px;
+    padding-right: 40px;
+    position: absolute;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#botao {
+    text-align: center;
+}
+
+#botao_enviar {
+    background-color: white;
+    text-align: center;
+    border: 1px solid;
+    display: inline-block;
+    color:black;
+    font-family:Arial;
+    font-size:17px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 45vw;
+    background-color: #ffd43c;
+}
+
+#botao_enviar2 {
+    background-color: white;
+    text-align: center;
+    border: 1px solid;
+    display: inline-block;
+    color:black;
+    font-family:Arial;
+    font-size:17px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 45vw;
+}
+
+
+.caixa-pedido {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    height: 250px;
+}
+
+#chat {
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nome-cliente {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#end-cliente {
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.produto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;  
+    margin-left: 10px;
+}
+
+.unidade {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;  
+    float:right;
+    margin-right: 40px;
+}
+
+.preco {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;  
+    float: right;
+    margin-right: 20px;
+}
+
+#inf-pedido {
+    margin-top: 30px;
+}
+
+#rejeitar {
+    background:    red;
+    border-radius: 5px;
+    padding:       5px 10px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 15px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    border: 0;
+    margin-top: 30px;
+    width: 90px;
+}
+
+#aceitar {
+    background:    #69b04f;
+    border-radius: 5px;
+    padding:       5px 10px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 15px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    border: 0;
+    margin-top: 30px;
+    width: 90px;
+    margin-right: 5px;
+}
+
+#caixa-botoes{
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+#total-pedido {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.caixa-assinatura {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    height: 250px;
+}
+
+#inf-assinatura {
+    margin-top: 44px;
+}
+
+#ciclo {
+    font-size: 15px;
+    margin-left: 10px;
+    color: rgb(50, 0, 255);
+    font-weight: bold;
+    margin-top: -8px;
+}
+
+#caixa-botoes-assinatura{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+main {
+    height: auto;
+    padding-bottom: 200px;
+}

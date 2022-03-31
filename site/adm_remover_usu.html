@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_adm_remover_usu.css"/>
+    <title>Administrador</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+
+<body>
+
+    <header class="topo_menu">
+        <img id="imagem_perfil" src="imagens/perfil.png">
+        <h1 id="nome_perfil">Nome de Perfil</h1> 
+        <p id="cargo">Adm Master</p>
+        <a href="adm_master.html"><img id="imagem_home" src="imagens/home.png"></a>
+        <img id="imagem_deslogar" src="imagens/deslogar.png">
+    </header>
+
+    <div id = "botao">
+    <button type = "button" id= "botao_enviar" class="grupo1 btn-toggle btn waves-effect waves-light green" data-element="#grupo1"> Cliente </button>
+    <button type = "button" id= "botao_enviar" class="btn-toggle btn waves-effect waves-light green" data-element="#grupo2">Vendedor </button>
+    </div>
+
+
+
+    <div id="busca">
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    </div>
+
+
+
+    
+    <div class = "grupos row">
+    <div class="col s12 m6 l3 grupo" id="grupo1" style = "display:none">
+    <div id = "formulario_clientes">
+        <img id="imagem_perfil2" src="imagens/perfil.png">
+        <h2>Nome do Cliente</h2>
+        <p>Endereço:</p>
+        <p>Nota:</p>
+        <p>Email:</p>
+        <p>Telefone:</p>
+        <p>Status:</p>
+        <div class="botoes_editar_excluir">
+            <a href="formulario_editar.html"><input type = "submit" class= "botao_editar" value = "Editar"></a>
+            <input type = "submit" class= "botao_excluir" value = "Desativar"  onclick="Mudarestado('excluir')">
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <script>
+        function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "block")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'block';
+    }
+    </script> 
+
+
+    
+
+
+    <div class="grupos row">
+        <div class="col s12 m6 l3 grupo" id="grupo2" style = "display:none" >
+        <div id = "formulario_vendedores">
+            <img id="imagem_perfil2" src="imagens/perfil.png">
+            <h2>Nome do Vendedor</h2>
+            <p>Endereço:</p>
+            <p>Nota:</p>
+            <p>Email:</p>
+            <p>Telefone:</p>
+            <p>Status:</p>
+            <div class="botoes_editar_excluir">
+                <a href="formulario_editar.html"><input type = "submit" class= "botao_editar" value = "Editar"></a>
+                <input type = "submit" class= "botao_excluir" value = "Desativar" onclick="Mudarestado('excluir')">
+            </div>
+        </div>
+        </div>
+        </div>
+        
+
+
+        <div id = "excluir">
+            <img id="imagem_voltar" src="imagens/voltar.png" onclick="voltar('excluir')">
+            <h3>Dê o motivo de exclusão dessa conta:</h3>
+            <div class="textarea_centralizar">
+                <textarea name="comentarios"></textarea>
+            </div>
+            <input type = "submit" id= "botao_excluir_sempre" value = "Excluir">
+        </div>    
+
+
+    <script>
+        function voltar(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'none';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+    </script> 
+
+
+
+
+    <script> // Clicar em Vendedor e Usuário
+    $(function(){
+        $(".btn-toggle").click(function(e){
+            e.preventDefault();
+            $(".grupo").hide(); //Oculta todos elemento com classe grupo
+            
+            el = $(this).data('element');
+            $(el).toggle(); //Exibe o elemento clicado.
+        });
+      });
+    </script>

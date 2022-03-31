@@ -1,0 +1,352 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#imagem_perfil {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    padding-top: 1px;
+    margin-left: 5px;
+}
+
+#nome_perfil {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 3px;
+}
+
+#cargo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#imagem_home {
+    height: 35px;
+    width: 35px;
+    margin-left: 80%;
+}
+
+#imagem_deslogar {
+    height: 33px;
+    width: 35px;
+    margin-left: 10px;
+}
+
+.topo_menu {
+    background-color: #ffb000;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: block;
+}
+
+.espacos {
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 10px 20px 10px
+}
+
+.imagens_admin1 {
+    width: 250px;
+    height: 150px;
+}
+
+.imagens_admin {
+    width: 150px;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.imagens_admin2 {
+    width: 130px;
+    height: 150px;
+}
+
+.titulos_admin {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.centralizar-div{
+    background-color: #2e294e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 45px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.div_botao_enviar{
+    text-align: center;
+}
+
+.botao_enviar {
+    background-color:#105cff;
+    text-align: center;
+	border-radius:28px;
+	border:0px solid;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+    text-decoration:none;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#div_formulario{
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none; /*---------------------------------------------------------*/
+    width: 95%;
+    text-align: left;
+}
+
+#div_formulario2{
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none; /*---------------------------------------------------------*/
+    width: 95%;
+    text-align: left;
+}
+
+.form_adm {
+    margin-left: 10px;
+}
+
+.voltar{
+    width: 26px;
+    height: 26px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.titulo_form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.text_comunicado {
+    border: 1px solid #8a8a8a;
+    border-radius: 5px;
+    width: 98%;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.textbox {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-style: hidden;
+    border-bottom: 1px solid #fec700;
+    height: 25px;
+    width: 98%;
+}
+
+.div_botao_enviar_form{
+    text-align: center;
+}
+
+.botao_enviar_form {
+    background-color:#105cff;
+    text-align: center;
+	border-radius:28px;
+	border:0px solid;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+    text-decoration:none;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.centralizar-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#comunicado_enviado {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#seta_baixo {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 90%;
+    margin-top: 40px;
+}
+
+#comunicado {
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 95%;
+    text-align: left;
+    display: none; /*---------------------------------------------------------*/
+}
+
+#titulo_comunicado {
+    font-size: 1rem;
+}
+
+#texto_comunicado {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#inf_comunicado {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divBusca{
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 50px;
+    width: 75%;
+    height: 35px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 260px;
+}
+
+.bntBusca{
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    margin-right: 10px;
+    float: right;
+}
+
+.selecao_adm {
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 20px 10px 20px 10px;
+    height: 150px;
+}
+
+.img_adm{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+}
+
+.nome_adm {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    margin-left: 70px;
+}
+
+.desc_adm {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.poder_adm {
+    background-color:#02a7f0;
+	border-radius:28px;
+	border:0px solid;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 15px;
+    text-decoration:none;
+    width: 130px;
+    padding: 3px 3px;
+    margin-top: 20px;
+}
+
+.poder_adm_p {
+    background-color:green;
+	border-radius:28px;
+	border:0px solid;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 15px;
+    text-decoration:none;
+    width: 130px;
+    padding: 3px 3px;
+    margin-top: 20px;
+}
+
+.poder_adm_e {
+    background-color:red;
+	border-radius:28px;
+	border:0px solid;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 15px;
+    text-decoration:none;
+    width: 130px;
+    padding: 3px 3px;
+    margin-top: 20px;
+}
+
+.div_poder_adm {
+    text-align: center;
+}
+
+#body_erro {
+    background-color: #2e294e;
+}
+
+#titulo_erro {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#texto_erro {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#imagem_erro {
+    text-align: center;
+    margin-top: 50px;
+}
+

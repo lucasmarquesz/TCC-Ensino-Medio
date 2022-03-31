@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd o Ovo | Assinaturas</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_assinatura_cliente.css">
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <ul>
+            <a href=""><img class="imagens_menu" src="imagens/home_inativo.png"></a>
+            <a href="perfil_cliente.html"><img class="imagens_menu" src="imagens/perfil_ativo.png"></a>
+            <a href=""><img class="imagens_menu" src="imagens/cesta_inativo.png"></a>
+            <a href=""><img class="imagens_menu" src="imagens/pedido_inativo.png"></a>
+            <a href=""><img class="imagens_menu" src="imagens/favorito_inativo.png"></a>
+        </ul>
+    </div>
+
+    <header>
+        <div id="redor">
+            <div class="centralizar-div">
+                <img id="icone" src="imagens/assinatura.png">
+            </div>
+        </div>
+
+        <div id="redor2">
+            <h1 id="titulo">Assinaturas</h1>
+        </div>
+
+        <a href="perfil_cliente.html"><img id="voltar" src="imagens/voltar.png"></a>
+    </header>
+
+    <main>
+        <h2 id="texto">Suas assinaturas ativas são:</h2>
+
+        <div class="assinatura">
+            <img class="foto" src="imagens/foto-assinatura.png">
+            <p>
+                Cx. com 30 ovos brancos mensal<br>
+                <span class="palavra">Preço: R$ 8,50</span>
+            </p>
+
+            <div id = "caixa_escondida">
+                <h3 id = "endereco">Endereço</h3>
+                <p id = "Paragrafo">
+                    Pagamento em 22/11/2020 <br>
+                    Assinado em 22/09/2020 <br>
+                    Próxima Entrega em: 22/11/2020 <br>
+                </p>
+                <input type = "submit" id= "botao_excluir_sempre" value = "Excluir">
+            </div>
+            <div class="centralizar-div">
+                <img class="seta-baixo" src="imagens/seta_baixo.png" onclick="aumentar('caixa_escondida')">
+            </div>
+        </div>
+    </main>
+
+</body>
+
+
+<script>
+    function aumentar(el) {
+    var display = document.getElementById(el).style.display;
+    if(display == "block")
+        document.getElementById(el).style.display = 'none';
+    else
+        document.getElementById(el).style.display = 'block';
+}
+</script> 

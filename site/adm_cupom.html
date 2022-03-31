@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_adm_cupom.css"/>
+    <title>Administrador</title>
+
+</head>
+
+<body>
+
+    <header class="topo_menu">
+        <img id="imagem_perfil" src="imagens/perfil.png">
+        <h1 id="nome_perfil">Nome de Perfil</h1> 
+        <p id="cargo">Adm Master</p>
+        <a href="adm_master.html"><img id="imagem_home" src="imagens/home.png"></a>
+        <img id="imagem_deslogar" src="imagens/deslogar.png">
+    </header>
+
+    <div id = "botao">
+    <input class= "botao_enviar" type = "submit" value = "+ Gerar Cupom" onclick="Mudarestado3('formulario')"> 
+    </div>
+
+    <script>
+        function Mudarestado3(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "block")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'block';
+    }
+    </script> 
+
+    <div class="centralizar-div">
+    <div id = "formulario">
+        <img id="imagem_voltar" src="imagens/voltar.png" onclick="Mudarestado4('formulario')">
+
+        <script>
+            function Mudarestado4(el) {
+            var display = document.getElementById(el).style.display;
+            if(display == "block")
+                document.getElementById(el).style.display = 'none';
+            else
+                document.getElementById(el).style.display = 'none';
+        }
+        </script> 
+        
+        <h2>Gerar Cupom </h2>
+
+        <form>
+            <label for="fname">Porcentagem de Desconto:</label><br>
+            <input type="text" class = "cadastro" name="fname"><br>
+            <label for="lname">Valido até:</label><br>
+            <input type="text" class = "cadastro" name="lname"><br>
+            <label>Condição</label><br>
+            <select  class = "cadastro" name = "condicao">
+                <option value = "opcao1">Para todos os clientes</option>
+                <option value = "opcao2">Para novos clientes</option>
+                <option value = "opcao3">Para clientes com mais de 6 meses de uso</option>
+                <option value = "opcao4">Para clientes com mais de 12 meses de uso</option>
+            </select>
+            <div id = "enviar">
+            <input class= "botao_enviar" type = "submit" value = "Gerar">
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <img id="imagem_seta_pra_baixo" src="imagens/seta_baixo.png" onclick="Mudarestado('minhaDiv')">
+    <h2>Cupons Existentes</h2>
+    <hr>
+
+    <script>
+        function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "block")
+            document.getElementById(el).style.display = 'none';
+        else
+            document.getElementById(el).style.display = 'block';
+    }
+    </script>    
+    
+    <div class="centralizar-div">
+        <div class = "caixa_cupons" id = "minhaDiv">
+            <h3>35% de Desconto</h3>
+            <p>Valido até: 20/11/2019</p>
+            <p>Gerado por: João Marontinni</p>
+            <p>Gerado em: 01/11/2019</p>
+            <p>Para: Novos Clientes</p>
+        </div>
+    </div>
+
+    
+    
+    <img id="imagem_seta_pra_baixo" src="imagens/seta_baixo.png"  onclick="Mudarestado2('minhaDiv2')">
+    <h2>Cupons Vencidos</h2>
+    <hr>
+
+    <script>
+        function Mudarestado2(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+    </script>  
+
+    <div class="centralizar-div">
+        <div class = "caixa_cupons" id = "minhaDiv2">
+            <h3>35% de Desconto</h3>
+            <p>Valido até: 31/10/2019</p>
+            <p>Gerado por: João Marontinni</p>
+            <p>Gerado em: 22/10/2019</p>
+            <p>Para: Novos Clientes</p>
+        </div>
+    </div>
+</body>

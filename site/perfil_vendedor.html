@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd o Ovo | Perfil</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_perfil_vendedor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="menu">
+        <div id="espaco-menu-aberto">
+            <button id="caixa-menu-aberto" onclick="Troca('espaco-menu-fechado'),Esconder('espaco-menu-aberto')">Aberto</button>
+        </div>
+
+        <script>                   
+            function Esconder(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "block")
+                    document.getElementById(el).style.display = 'none';
+                else
+                    document.getElementById(el).style.display = 'none';
+    }
+
+            function Troca(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "none")
+                    document.getElementById(el).style.display = 'block';
+                else
+                    document.getElementById(el).style.display = 'block';
+    }
+
+        </script>
+
+        <div id="espaco-menu-fechado">
+            <button id="caixa-menu-fechado" onclick="Troca('espaco-menu-aberto'),Esconder('espaco-menu-fechado')">Fechado</button>
+        </div>
+        <ul>
+            <a href="home_vendedor.html"><img class="imagens_menu" src="imagens/home_inativo.png"></a>
+            <a href="perfil_vendedor.html"><img class="imagens_menu" src="imagens/perfil_ativo.png"></a>
+        </ul>
+    </div> 
+
+    <div class="centralizar-div">
+        <div id="informacoes_vendedor">
+            <div class="centralizar-div">
+                <div id="foto">
+                    <img id="foto_perfil" src="imagens/imagemdefault_perfil_vendedor.png">
+                </div>
+            </div>
+
+            <div id="conteudo_perfil">
+                <h1 id="nome_vendedor">Nome do Vendedor</h1>
+                <h2 id="nota_vendedor">Nota: 4.5</h2>
+
+                <figure id="imagens_nota">
+                    <img class="imagem_nota" src="imagens/nota-estrela.png">
+                    <img class="imagem_nota" src="imagens/nota-estrela.png">
+                    <img class="imagem_nota" src="imagens/nota-estrela.png">
+                    <img class="imagem_nota" src="imagens/nota-estrela.png">
+                    <img class="imagem_nota" src="imagens/nota-estrela-sem.png">
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div id="opcoes_perfil">
+        <a href="pedido_assinatura_vendedor.html"><img class="imagens_opcoes" src="imagens/pedidos_assinaturas.png"></a>
+        <a href="pedido_assinatura_vendedor.html"><h3 class="texto_opcoes">Pedidos e Assinaturas</h3></a>
+
+        <hr class="linha">
+
+        <a href="suapagina_vendedor.html"><img class="imagens_opcoes" src="imagens/sua_pagina.png"></a>
+        <a href="suapagina_vendedor.html"><h3 class="texto_opcoes">Sua página</h3></a>
+
+        <hr class="linha">
+
+        <a href="editar_catalogo_vendedor.html"><img class="imagens_opcoes" src="imagens/editar_planos.png"></a>
+        <a href="editar_catalogo_vendedor.html"><h3 class="texto_opcoes">Editar Catálogos</h3></a>
+
+        <hr class="linha">
+
+        <a href="avalicoes_vendedor.html"><img class="imagens_opcoes" src="imagens/avaliacoes_vendedor.png"></a>
+        <a href="avalicoes_vendedor.html"><h3 class="texto_opcoes">Avaliações</h3></a>
+
+        <hr class="linha">
+
+        <a href="cliente_vendedor.html"><img class="imagens_opcoes" src="imagens/clientes.png"></a>
+        <a href="cliente_vendedor.html"><h3 class="texto_opcoes">Clientes</h3></a>
+
+        <hr class="linha">
+
+        <a href="avisos_vendedor.html"><img class="imagens_opcoes" src="imagens/avisos.png"></a>
+        <a href="avisos_vendedor.html"><h3 class="texto_opcoes">Avisos</h3></a>
+
+        <hr class="linha">
+
+        <a href="historico_vendedor.html"><img class="imagens_opcoes" src="imagens/historico_pedido.png"></a>
+        <a href="historico_vendedor.html"><h3 class="texto_opcoes">Histórico</h3></a>
+
+        <hr class="linha">
+
+        <a href="editar_comercio_vendedor.html"><img class="imagens_opcoes" src="imagens/editar_comercio.png"></a>
+        <a href="editar_comercio_vendedor.html"><h3 class="texto_opcoes">Editar seu Comércio</h3></a>
+
+        <hr class="linha">
+
+        <a href="arrecadado_vendedor.html"><img class="imagens_opcoes" src="imagens/arrecadado.png"></a>
+        <a href="arrecadado_vendedor.html"><h3 class="texto_opcoes">Arrecadado</h3></a>
+
+        <hr class="linha">
+
+        <a href="configuracao_vendedor.html"><img class="imagens_opcoes" src="imagens/configuracao.png"></a>
+        <a href="configuracao_vendedor.html"><h3 class="texto_opcoes">Configurações</h3></a>
+    </div>
+
+</body>
+</html>

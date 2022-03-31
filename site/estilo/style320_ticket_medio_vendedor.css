@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.centralizar-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+#menu {
+    background-color: #ffd43c;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px 0px 10px -5px #888888;
+}
+
+#menu ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+#espaco-menu-aberto {
+    float: right;
+    margin-top: 15px;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#espaco-menu-fechado {
+    float: right;
+    margin-top: 15px;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#caixa-menu-aberto {
+    background:    #00d218;
+    border-radius: 1000px;
+    padding:       10px;
+    width: 80%;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 20px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    border: 0;
+    margin-left: 22px;
+}
+
+#caixa-menu-fechado {
+    background:   red;
+    border-radius: 1000px;
+    padding:       10px;
+    width: 80%;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 20px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    border: 0;
+    margin-left: 22px;
+}
+
+.imagens_menu {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 2% auto;
+}
+
+main {
+    height: auto;
+    padding-bottom: 200px;
+}
+
+header {
+    background-color: #ffd43c;
+    width: 100%;
+    height: 70px;
+}
+
+#voltar {
+    width: 20px;
+    height: 26px;
+    float: right;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+
+#icone {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 35px;
+    z-index: 2;
+    margin-left: -1px;
+}
+
+#redor {
+    background-color: #2e294e;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+#redor2 {
+    background-color: #2e294e;
+    height: 50px;
+    margin-left: 70px;
+    margin-top: -60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+#botao {
+    text-align: center;
+}
+
+#botao_enviar {
+    background-color: white;
+    text-align: center;
+    border: 1px solid;
+    display: inline-block;
+    color:black;
+    font-family:Arial;
+    font-size:17px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 25vw;
+    padding: 10px;
+    background-color: #ffd43c;
+}
+
+#botao_enviar2 {
+    background-color: white;
+    text-align: center;
+    border: 1px solid;
+    display: inline-block;
+    color:black;
+    font-family:Arial;
+    font-size:17px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 25vw;
+    padding: 10px;
+}
+
+#botao_enviar3 {
+    background-color: white;
+    text-align: center;
+    border: 1px solid;
+    display: inline-block;
+    color:black;
+    font-family:Arial;
+    font-size:17px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 25vw;
+    padding: 10px;
+}
+
+.espacos {
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+    background-color: rgb(255, 230, 170);
+    width: 90%;
+    margin-top: 30px;
+}
+
+.titulo-primario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: #333333;
+}
+
+.titulo-secundario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: #333333;
+    margin-top: -50px;
+    padding-bottom: 35px;
+}
+
+#anual {
+    width: 100%;
+}
+
+#diario {
+    width: 100%;
+}
+
+#geral {
+    width: 100%;
+}
+
+.grupos {
+    width: 100%;
+}

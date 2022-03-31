@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd o Ovo | Faturamento</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_faturamento_vendedor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <div id="espaco-menu-aberto">
+            <button id="caixa-menu-aberto" onclick="Troca('espaco-menu-fechado'),Esconder('espaco-menu-aberto')">Aberto</button>
+        </div>
+
+        <script>                   
+            function Esconder(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "block")
+                    document.getElementById(el).style.display = 'none';
+                else
+                    document.getElementById(el).style.display = 'none';
+    }
+
+            function Troca(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "none")
+                    document.getElementById(el).style.display = 'block';
+                else
+                    document.getElementById(el).style.display = 'block';
+    }
+
+        </script>
+
+        <div id="espaco-menu-fechado">
+            <button id="caixa-menu-fechado" onclick="Troca('espaco-menu-aberto'),Esconder('espaco-menu-fechado')">Fechado</button>
+        </div>
+        <ul>
+            <a href="home_vendedor.html"><img class="imagens_menu" src="imagens/home_ativo.png"></a>
+            <a href="perfil_vendedor.html"><img class="imagens_menu" src="imagens/perfil_inativo.png"></a>
+        </ul>
+    </div>
+
+    <header>
+        <div id="redor">
+            <div class="centralizar-div">
+                <img id="icone" src="imagens/arrecadado.png">
+            </div>
+        </div>
+
+        <div id="redor2">
+            <h1 id="titulo">Faturamento</h1>
+        </div>
+
+        <a href="home_vendedor.html"><img id="voltar" src="imagens/voltar.png"></a>
+    </header>
+
+    <main>
+        <div id = "botao">
+            <button type = "button" id= "botao_enviar" class="btn-toggle" data-element="#grupo1" onclick="CorAtiva('botao_enviar'),CorInativa('botao_enviar2'),CorInativa('botao_enviar3')">Anual</button>
+            <button type = "button" id= "botao_enviar2" class="btn-toggle" data-element="#grupo2" onclick="CorAtiva('botao_enviar2'),CorInativa('botao_enviar'),CorInativa('botao_enviar3')">Diário</button>
+            <button type = "button" id= "botao_enviar3" class="btn-toggle" data-element="#grupo3" onclick="CorAtiva('botao_enviar3'),CorInativa('botao_enviar'), CorInativa('botao_enviar2')">Geral</button>
+        </div>
+
+        <div class="centralizar-div">
+            <div class = "grupos row">
+            <div class="col s12 m6 l3 grupo" id="grupo1" style = "display: block">
+            <div id="anual">
+                <div class="div_adicionar">
+                    <input class="botao_adicionar" type="submit" value="+ Adicionar Ganhos" onclick="Mais('form-adicionar-ano')">
+                </div>
+                <div class="centralizar-div">
+                    <div id="form-adicionar-ano">
+                        <form>
+                            <label>Seu Ganho:</label><br>
+                            <input class="textbox" type="text"><br>
+                            <label>Mês:</label><br>
+                            <select class="textbox" name="meses">
+                                <option value="">Janeiro</option>
+                                <option value="">Fevereiro</option>
+                                <option value="">Março</option>
+                                <option value="">Abril</option>
+                                <option value="">Maio</option>
+                                <option value="">Junho</option>
+                                <option value="">Julho</option>
+                                <option value="">Agosto</option>
+                                <option value="">Setembro</option>
+                                <option value="">Outubro</option>
+                                <option value="">Novembro</option>
+                                <option value="">Dezembro</option>
+                            </select><br>
+                            <button id="botao-add">Adicionar</button>
+                            <button id="botao-cancelar">Cancelar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="centralizar-div">
+                    <div class="espacos">
+                        <h2 class="titulo-primario">427,25 R$</h2>
+                        <h3 class="titulo-secundario">Novembro</h2>
+                    </div>
+
+                    <div class="espacos">
+                        <h2 class="titulo-primario">1503,21 R$</h2>
+                        <h3 class="titulo-secundario">Total - 2019</h2>
+                    </div>
+
+                    <div class="espacos">
+                        <h2 class="titulo-primario">154,01 R$</h2>
+                        <h3 class="titulo-secundario">Média Mensal</h2>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="grupos row">
+            <div class="col s12 m6 l3 grupo" id="grupo2" style = "display: none">
+            <div id="diario">
+                <div class="div_adicionar">
+                    <input class="botao_adicionar" type="submit" value="+ Adicionar Ganhos" onclick="Mais('form-adicionar-diario')">
+                </div>
+                <div class="centralizar-div">
+                    <div id="form-adicionar-diario">
+                        <form>
+                            <label>Seu Ganho:</label><br>
+                            <input class="textbox" type="text"><br>
+                            <label>Mês:</label><br>
+                            <select class="textbox" name="meses">
+                                <option value="">Janeiro</option>
+                                <option value="">Fevereiro</option>
+                                <option value="">Março</option>
+                                <option value="">Abril</option>
+                                <option value="">Maio</option>
+                                <option value="">Junho</option>
+                                <option value="">Julho</option>
+                                <option value="">Agosto</option>
+                                <option value="">Setembro</option>
+                                <option value="">Outubro</option>
+                                <option value="">Novembro</option>
+                                <option value="">Dezembro</option>
+                            </select><br>
+
+                            <label>Dia:</label><br>
+                            <select class="textbox1" name="meses">
+                                <option value="">01</option>
+                                <option value="">02</option>
+                                <option value="">03</option>
+                                <option value="">04</option>
+                                <option value="">05</option>
+                                <option value="">06</option>
+                                <option value="">07</option>
+                                <option value="">08</option>
+                                <option value="">09</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                                <option value="">13</option>
+                                <option value="">14</option>
+                                <option value="">15</option>
+                                <option value="">16</option>
+                                <option value="">17</option>
+                                <option value="">18</option>
+                                <option value="">19</option>
+                                <option value="">20</option>
+                                <option value="">21</option>
+                                <option value="">22</option>
+                                <option value="">23</option>
+                                <option value="">24</option>
+                                <option value="">25</option>
+                                <option value="">26</option>
+                                <option value="">27</option>
+                                <option value="">28</option>
+                                <option value="">29</option>
+                                <option value="">30</option>
+                                <option value="">31</option>
+                            </select><br>
+                            <button id="botao-add">Adicionar</button>
+                            <button id="botao-cancelar">Cancelar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="centralizar-div">
+                    <div class="espacos">
+                        <h2 class="titulo-primario">30,21 R$</h2>
+                        <h3 class="titulo-secundario">Total - Dia</h2>
+                    </div>
+
+                    <div class="espacos">
+                        <h2 class="titulo-primario">15,01 R$</h2>
+                        <h3 class="titulo-secundario">Média por Dia</h2>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="grupos row">
+            <div class="col s12 m6 l3 grupo" id="grupo3" style="display: none" >
+            <div id="geral">
+                <div class="centralizar-div">
+                    <div class="espacos">
+                        <h2 class="titulo-primario">6128,12 R$</h2>
+                        <h3 class="titulo-secundario">Arrecadado Até Agora</h2>
+                    </div>
+
+                    <div class="espacos">
+                        <h2 class="titulo-primario">15,01 R$</h2>
+                        <h3 class="titulo-secundario">Média por Dia</h2>
+                    </div>
+
+                    <div class="espacos">
+                        <h2 class="titulo-primario">64,21 R$</h2>
+                        <h3 class="titulo-secundario">Média por Mês</h2>
+                    </div>
+
+                    <div class="espacos">
+                        <h2 class="titulo-primario">512,21 R$</h2>
+                        <h3 class="titulo-secundario">Média por Ano</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script> // Clicar em Vendedor e Usuário
+        $(function(){
+            $(".btn-toggle").click(function(e){
+                e.preventDefault();
+                $(".grupo").hide(); //Oculta todos elemento com classe grupo
+                
+                el = $(this).data('element');
+                $(el).toggle(); //Exibe o elemento clicado.
+            });
+          });
+
+        
+        function Mais(el) {
+        var display = document.getElementById(el).style.display;
+            if(display == "none")
+                document.getElementById(el).style.display = 'block';
+            else
+                document.getElementById(el).style.display = 'block';
+        }
+
+        function CorAtiva(el) {
+        var backgroundColor = document.getElementById(el).style.backgroundColor;
+            if(backgroundColor == "white")
+                document.getElementById(el).style.backgroundColor = '#ffd43c';
+            else
+                document.getElementById(el).style.backgroundColor = '#ffd43c';
+        }
+
+        function CorInativa(el) {
+        var backgroundColor = document.getElementById(el).style.backgroundColor;
+            if(backgroundColor == "#ffd43c")
+                document.getElementById(el).style.backgroundColor = 'white';
+            else
+                document.getElementById(el).style.backgroundColor = 'white';
+        }
+    </script>
+
+</body>
+</html>

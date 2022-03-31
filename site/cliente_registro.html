@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo/default.css" rel="stylesheet">
+    <script src="js/mascara.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> 
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_registro.css"/>
+    <title>Kd O Ovo: Registro de Cliente</title>
+
+</head>
+
+<body>
+    <div id="container">   
+
+        <a href="index.html"><img class="voltar" src="imagens/voltar.png"></a>
+
+        <h1 class="h1">Adicione seus dados:</h1>
+        <div class="centralizar_carregar_foto">
+            <div class="carregar_foto">
+                <img class="foto_carregar" src="imagens/carregar_foto.png">
+                <p>Carregue sua foto<br>(opcional)</p>
+            </div>
+        </div>
+
+        <form>
+
+            <label for="nome">Nome Completo</label><br>
+            <input class="textbox" type="text" name="nome_usu" id="nome" required><br>
+
+            <label for="email">Email</label><br>
+            <input class="textbox" type="email" name="email_usu" id="email"><br>
+
+            <label>Senha</label>
+            <img class="foto_informacao" src="imagens/informacao.png"><br>
+            <input class="textbox" type="password" name="senha_usu" id = "pass">
+            <img id="olho" class="olho" src="imagens/olho.png"><br>
+            
+            <label for="celular">Celular</label><br>
+            <input name="tel_usu" class="textbox" type="tel" id="celular" onkeyup="formataTelefone(this,event);" maxlength="15" required><br>
+
+            <label>Escolha um Documento</label><br>
+            <input class="radio" type="radio" name="id_tipo_doc_usu" value="cpf" onclick="Aparecer('cpf');Esconder('cnpj')" required>CPF<br>
+            <input class="radio" type="radio" name="id_tipo_doc_usu" value="cnpj" onclick="Aparecer('cnpj');Esconder('cpf')" required>CNPJ<br><br>
+
+            <script>
+
+                function Esconder(el) {
+                var display = document.getElementById(el).style.display;
+                    if(display == "block")
+                        document.getElementById(el).style.display = 'none';
+                    else
+                        document.getElementById(el).style.display = 'none';
+                }
+    
+                function Aparecer(el) {
+                var display = document.getElementById(el).style.display;
+                    if(display == "none")
+                        document.getElementById(el).style.display = 'block';
+                    else
+                        document.getElementById(el).style.display = 'block';
+                }
+    
+                document.getElementById('olho').addEventListener('mousedown', function() {
+                document.getElementById('pass').type = 'text';
+                });
+    
+                document.getElementById('olho').addEventListener('mouseup', function() {
+                document.getElementById('pass').type = 'password';
+                });
+            
+                </script>
+    
+                <div id = "cpf">
+                <label>Número do CPF</label><br>
+                <input class="textbox" type="text" name="num_doc" onkeyup="formataCPF(this,event);" maxlength="14">
+                </div>
+    
+                <div id = "cnpj">
+                <label>Número do CNPJ</label><br>
+                <input class="textbox" type="text" name="num_doc" onkeyup="formataCNPJ(this,event);" maxlength="18">
+                </div>
+            
+            <div id="num_pags">
+                <div id="pag_selecionada" class="num_pag"><span class="span_pags">1</span></div>
+                <div class="num_pag"><span class="span_pags">2</span></div>
+            </div>
+
+            
+            <div id="botao">
+                <input class="botao" type="submit" value="Próximo" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

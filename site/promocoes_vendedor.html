@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kd o Ovo | Promoções</title>
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_promocoes_vendedor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <div id="espaco-menu-aberto">
+            <button id="caixa-menu-aberto" onclick="Troca('espaco-menu-fechado'),Esconder('espaco-menu-aberto')">Aberto</button>
+        </div>
+
+        <script>                   
+            function Esconder(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "block")
+                    document.getElementById(el).style.display = 'none';
+                else
+                    document.getElementById(el).style.display = 'none';
+    }
+
+            function Troca(el) {
+            var display = document.getElementById(el).style.display;
+                if(display == "none")
+                    document.getElementById(el).style.display = 'block';
+                else
+                    document.getElementById(el).style.display = 'block';
+    }
+
+        </script>
+
+        <div id="espaco-menu-fechado">
+            <button id="caixa-menu-fechado" onclick="Troca('espaco-menu-aberto'),Esconder('espaco-menu-fechado')">Fechado</button>
+        </div>
+        <ul>
+            <a href="home_vendedor.html"><img class="imagens_menu" src="imagens/home_ativo.png"></a>
+            <a href="perfil_vendedor.html"><img class="imagens_menu" src="imagens/perfil_inativo.png"></a>
+        </ul>
+    </div>
+
+    <header>
+        <div id="redor">
+            <div class="centralizar-div">
+                <img id="icone" src="imagens/promocao.png">
+            </div>
+        </div>
+
+        <div id="redor2">
+            <h1 id="titulo">Promoções</h1>
+        </div>
+
+        <a href="home_vendedor.html"><img id="voltar" src="imagens/voltar.png"></a>
+    </header>
+
+    <main>
+
+        <div id="anual">
+            <div class="centralizar-div">
+                <div class="espacos">
+                    <h2 class="titulo-primario">1 <br>Promoção</h2>
+                    <h3 class="titulo-secundario">Ativa</h2>
+                </div>
+                <input class="botao_adicionar" type="submit" value="+ Adicionar Promoção" onclick="Mais('form-promocao')">
+                <div id="form-promocao">
+                    <form>
+                        <label>Título:</label><br>
+                        <input class="textbox" type="text"><br>
+                        <label>Data de expedição:</label><br>
+                        <select class="textbox-dias" name="dias">
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                            <option value="">06</option>
+                            <option value="">07</option>
+                            <option value="">08</option>
+                            <option value="">09</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">25</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                            <option value="">31</option>
+                        </select>
+                        <select class="textbox-meses" name="meses">
+                            <option value="">Janeiro</option>
+                            <option value="">Fevereiro</option>
+                            <option value="">Março</option>
+                            <option value="">Abril</option>
+                            <option value="">Maio</option>
+                            <option value="">Junho</option>
+                            <option value="">Julho</option>
+                            <option value="">Agosto</option>
+                            <option value="">Setembro</option>
+                            <option value="">Outubro</option>
+                            <option value="">Novembro</option>
+                            <option value="">Dezembro</option>
+                        </select>
+                        <select class="textbox-ano" name="ano">
+                            <option value="">2019</option>
+                            <option value="">2020</option>
+                            <option value="">2021</option>
+                            <option value="">2022</option>
+                        </select><br>
+                        <label>Produtos:</label><br>
+                        <span class="spanzin">*Selecione o Produto*</span><br>
+                        <select class="textbox-produto" name="ano">
+                            <option value="">Caixa c/ 30 Ovos Brancos</option>
+                            <option value="">Caixa c/ 30 Ovos Caipiras</option>
+                            <option value="">Caixa c/ 30 Ovos Codorna</option>
+                            <option value="">Caixa c/ 30 Ovos Ganso</option>
+                        </select><br>
+                        <span id="preco">Preço Promocional:</span><br>
+                        <input class="textbox" type="text"><br>
+                        <label>Assinaturas:</label><br>
+                        <span class="spanzin">*Selecione a Assinatura*</span><br>
+                        <select class="textbox-produto" name="ano">
+                            <option value="">Caixa c/ 30 Ovos Brancos</option>
+                            <option value="">Caixa c/ 30 Ovos Caipiras</option>
+                            <option value="">Caixa c/ 30 Ovos Codorna</option>
+                            <option value="">Caixa c/ 30 Ovos Ganso</option>
+                        </select><br>
+                        <span id="preco">Preço Promocional:</span><br>
+                        <input class="textbox" type="text"><br>
+                        <button id="botao-add">Adicionar</button>
+                        <button id="botao-cancelar">Cancelar</button>
+                    </form>
+                </div>
+            </div>
+
+            <img class="icone-pedido" src="imagens/pedido_concluido.png">
+            <h2 class="titulo-pedido">Ativas</h2>
+            <img class="seta-baixo" src="imagens/seta_baixo.png" onclick="Mais('promocoes-ativas')">
+            <hr class="linha">
+
+            <div class="centralizar-div">
+                <div id="promocoes-ativas">
+                    <h2>Título da Promoção</h2>
+                    <span class="nome-produto"><b>Produto</b></span><br><span class="preco-antigo"><b>De:</b> 0,00 R$</span><span class="preco-promo"><b>Para:</b> 0,00 R$</span><br>
+                    <hr>
+                    <span class="nome-produto"><b>Produto</b></span><br><span class="preco-antigo"><b>De:</b> 0,00 R$</span><span class="preco-promo"><b>Para:</b> 0,00 R$</span><br>
+                    <p id="criacao">Criada Em: 15/21/21</p>
+                    <p id="expiracao">Expirada Em: 15/51/21</p>
+                    <button id="botao-add">Extender</button>
+                    <button id="botao-cancelar">Cancelar</button>
+                </div>
+            </div>
+
+            <img class="icone-pedido" src="imagens/pedido_cancelado.png">
+            <h2 class="titulo-pedido">Expiradas</h2>
+            <img class="seta-baixo" src="imagens/seta_baixo.png"  onclick="Mais('promocoes-expiradas')">
+            <hr class="linha">
+
+            <div class="centralizar-div">
+                <div id="promocoes-expiradas">
+                    <h2>Título da Promoção</h2>
+                    <span class="nome-produto"><b>Produto</b></span><br><span class="preco-antigo"><b>De:</b> 0,00 R$</span><span class="preco-promo"><b>Para:</b> 0,00 R$</span><br>
+                    <hr>
+                    <span class="nome-produto"><b>Produto</b></span><br><span class="preco-antigo"><b>De:</b> 0,00 R$</span><span class="preco-promo"><b>Para:</b> 0,00 R$</span><br>
+                    <p id="criacao">Criada Em: 15/21/21</p>
+                    <p id="expiracao">Expirada Em: 15/51/21</p>
+                    <button id="botao-add">Renovar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            function Mais(el) {
+                var display = document.getElementById(el).style.display;
+                    if(display == "none")
+                        document.getElementById(el).style.display = 'block';
+                    else
+                        document.getElementById(el).style.display = 'none';
+            }
+        </script>
+    </main>
+
+</body>
+</html>

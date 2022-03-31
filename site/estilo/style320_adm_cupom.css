@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#imagem_perfil {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    padding-top: 3px;
+    margin-left: 3px;
+}
+
+#nome_perfil {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 3px;
+}
+
+#cargo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#imagem_home {
+    height: 35px;
+    width: 35px;
+    margin-left: 80%;
+}
+
+#imagem_deslogar {
+    height: 33px;
+    width: 35px;
+    margin-left: 10px;
+}
+
+#botao {
+    text-align: center;
+}
+
+#formulario {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: none;
+    width: 90%;
+}
+
+.centralizar-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+#imagem_voltar {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+
+}
+
+#enviar {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#imagem_seta_pra_baixo {
+    margin-top: 25px;
+    margin-left: 85%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+
+.topo_menu {
+    background-color: #ffb000;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.botao_enviar {
+    background-color:#105cff;
+    text-align: center;
+    border-radius:28px;
+    border:0px solid;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.cadastro {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    border-style: hidden;
+    border-bottom: 1px solid #fec700;
+    height: 25px;
+    width: 95%;
+}
+
+.caixa_cupons {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: none;
+    width: 90%;
+}
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    margin-left: 5px;
+}
+
+p {
+    font-family: Arial;
+    margin-left: 5px;
+}
+
+label {
+    margin-left: 5px;;
+}

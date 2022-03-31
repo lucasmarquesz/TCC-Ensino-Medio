@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo/default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 599px)" href="estilo/style320_registro_endereco_estabelecimento.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Kd O Ovo: Registro de Vendedor</title>
+
+</head>
+
+<body>
+    <div>
+        <div>
+            <a href = "vendedor_endereco_pessoal.html"><img src="imagens/voltar.png" id = "voltar"></a>
+        </div>
+
+        <h1 class="h1">Endereço Comercial ou Veículo:</h1>
+
+        <div class="centralizar-div">
+            <img src="imagens/endereco_comercial.jpg" id = "imagem_central">
+        </div>
+
+
+        <p>Seu comércio é um ponto fixo ou veículo?</p>
+
+        <!-- Botões de Escolha -->
+
+        
+        <div id = "botoes">
+            <button type = "button" id= "botao_enviar" class="btn-toggle btn waves-effect waves-light green" data-element="#grupo1"> Fixo </button>
+            <button type = "button" id= "botao_enviar" class="btn-toggle btn waves-effect waves-light green" data-element="#grupo2">Móvel </button>
+        </div>
+
+        <script> // Clicar em Vendedor e Usuário
+            $(function(){
+                $(".btn-toggle").click(function(e){
+                    e.preventDefault();
+                    $(".grupo").hide(); //Oculta todos elemento com classe grupo
+                    
+                    el = $(this).data('element');
+                    $(el).toggle(); //Exibe o elemento clicado.
+                });
+              });
+        </script>
+
+        <div class = "grupos row">
+        <div class="col s12 m6 l3 grupo" id="grupo1" style = "display:none">
+            <p>Adicione os dados de seu ponto fixo:</p>
+
+            <form>
+    
+                <label>CEP</label><br>
+                <input class = "textbox" type="text" name="cep"><br>
+    
+                <label>UF</label><br>
+                <select class="textbox" name="UF">
+                    <option value="">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select><br>
+    
+                <label>Cidade</label><br>
+                <input class = "textbox" type="text" name="cidade"><br>
+    
+                <label>Bairro</label><br>
+                <input class = "textbox" type="text" name="bairro"><br>
+    
+                <label>Logradouro</label><br>
+                <input class = "textbox" type="text" name="logradouro"><br>
+    
+                <label>Número</label><br>
+                <input class = "textbox" type="number" name="numero_casa"><br>
+    
+                <label>Complemento (opcional)</label><br>
+                <input class = "textbox" type="text" name="complemento"><br>
+    
+
+            <p>Escolha uma foto de seu estabelecimento</p>
+            <center>
+            <div class="carregar_foto">
+                <img class="foto_carregar" src="imagens/carregar_foto.png">
+                <p class = "carregar">Carregue sua foto</p><br>
+            </div>
+            </center>
+            <!-- Preview no Google Maps -->
+            <div id="num_pags">
+                <div  class="num_pag"><span class="span_pags">1</span></div>
+                <div class="num_pag"><span class="span_pags">2</span></div>
+                <div id="pag_selecionada" class="num_pag"><span class="span_pags">3</span></div>
+                <div class="num_pag"><span class="span_pags">4</span></div>
+                <div class="num_pag"><span class="span_pags">5</span></div>
+            </div>
+
+            <div id="botao">
+                <input class="botao" type="submit" value="Próximo">
+            </div>
+            </form>
+        </div>
+        </div>
+
+
+        <div class="grupos row">
+            <div class="col s12 m6 l3 grupo" id="grupo2" style = "display:none">
+        <form>
+            <p>Adicione os dados de seu ponto móvel:</p>
+
+            <label>Motorista</label><br>
+            <input class = "textbox" type="text" name="motorista"><br>
+
+            <label>Modelo</label><br>
+            <input class = "textbox" type="text" name="modelo_carro"><br>
+
+            <label>Marca</label><br>
+            <input class = "textbox" type="text" name="marca_carro"><br>
+
+            <label>Cor</label><br>
+            <input class = "textbox" type="text" name="cor_carro"><br>
+
+            <label>Placa</label><br>
+            <input class = "textbox" type="text" name="placa_carro"><br>
+
+            <p>Escolha uma foto de seu veículo</p>
+            <center>
+                <div class="carregar_foto">
+                    <img class="foto_carregar" src="imagens/carregar_foto.png">
+                    <p class = "carregar">Carregue sua foto</p><br>
+                </div>
+            </center>
+            <div id="num_pags">
+                <div  class="num_pag"><span class="span_pags">1</span></div>
+                <div class="num_pag"><span class="span_pags">2</span></div>
+                <div id="pag_selecionada" class="num_pag"><span class="span_pags">3</span></div>
+                <div class="num_pag"><span class="span_pags">4</span></div>
+                <div class="num_pag"><span class="span_pags">5</span></div>
+            </div>
+
+            <div id="botao">
+                <input class="botao" type="submit" value="Próximo">
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

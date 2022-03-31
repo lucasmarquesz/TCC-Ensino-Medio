@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#imagem_perfil {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    padding-top: 3px;
+    margin-left: 3px;
+}
+
+#nome_perfil {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 3px;
+}
+
+#cargo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#imagem_home {
+    height: 35px;
+    width: 35px;
+    margin-left: 80%;
+}
+
+#imagem_deslogar {
+    height: 33px;
+    width: 35px;
+    margin-left: 10px;
+}
+
+#botao {
+    text-align: center;
+}
+
+#busca {
+    margin-left: 3%;
+}
+
+#formulario_clientes {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 100px;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    height: 250px;
+}
+
+#imagem_perfil2 {
+    height: 35px;
+    width: 35px;
+    padding-top: 3px;
+    margin-left: 3px;
+    float: left;
+}
+
+#imagem_voltar {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+
+}
+
+#excluir {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    display: none;
+}
+
+#imagem_voltar {
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+#botao_excluir_sempre {
+    background-color: red;
+    text-align: center;
+    border-radius: 10px;
+    color:white;
+    font-family: Arial;
+    font-size: 14px;
+    margin-left: 79%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#formulario_vendedores {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 100px;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 10px;
+    height: 250px;
+}
+
+.topo_menu {
+    background-color: #ffb000;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#botao_enviar {
+    background-color: white;
+    text-align: center;
+    border: 1px solid;
+    display: inline-block;
+    color:black;
+    font-family:Arial;
+    font-size:17px;
+    padding: 10px 50px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#botao_enviar:hover {
+    background-color:#ffb000;
+}
+
+#botao_enviar:focus {
+    background-color:#ffb000;
+}
+
+.botoes_editar_excluir {
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.botao_editar {
+    background-color: green;
+    text-align: center;
+    border-radius: 10px;
+    color:white;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.botao_excluir {
+    background-color: red;
+    text-align: center;
+    border-radius: 10px;
+    color:white;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 69%;
+    background: #f1f1f1;
+    margin-top: 20px;
+    margin-left: 8px;
+  }
+  
+ 
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: rgb(5, 33, 56);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    margin-top: 20px;
+  }
+  
+h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 13%;
+    margin-top: 2%;
+}
+
+p {
+    font-family: Arial;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
+
+.textarea_centralizar {
+    text-align: center;
+}
+
+textarea {
+    width: 80%;
+    height: 120px;
+}
+
